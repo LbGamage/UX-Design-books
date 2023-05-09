@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-bar">
+        <img src="A3/Logo.png" alt="Logo">
+        <h1 class="bookshop" id="bookshop-home">Robinson's Bookshop</h1>
+    </div>    
+    <div id="navigation">
+        <p id="past">Cart</p>
+        <i class="nav-arrow"></i> <!--add css to create arrows or replace with images-->                    
+        <p id="nav-location">Books</p>
+        <i class="nav-arrow"></i> <!--add css to create arrows or replace with images-->                    
+        <p id="future"> Shipping</p>
+        <i class="nav-arrow"></i> <!--add css to create arrows or replace with images-->                    
+        <p id="future"> Payment</p>
+    </div>
+    <div class="column">
+        <div id="join">
+            <button id="login">Login</button>
+            <p id="future">Not a member?</p>
+            <button id="sign-up">Sign Up</button>
+            <p id="future">OR</p>
+            <p id="nav-location">Continue as Guest</p>
+            <hr>
+        </div>
+
+        <div id="express">
+            <p id="future"> Express Checkout</p>
+            <img src="" alt=""> <!--paypal button-->
+            <span id="middle-part">OR</span>
+            </div>
+        
+        <div class="container">
+            <h3 id="shipping-address"> Shipping Address</h3>
+
+            <form action="">
+                <div class="input group">
+                    <div class="input-box">    
+                        <span>First Name</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-box">
+                        <span>Last Name</span>
+                        <input type="text">
+                    </div>          
+
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <span>Email Address</span>
+                        <input type="text">
+                        <img src="" alt=""> <!--tick or cross to verify email, could be replaced for error message-->
+                        <input type="checkbox" id="checkbox" name="checkbox" value="yes">
+                        <label for="checkbox" id="email-label">Email me with news and offers</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span>Address</span>
+                        <input type="text">
+                        <img src="A3/search-icon.png" alt=""> 
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Apartment, Suite, etc. (optional)">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <span>City</span>
+                        <input type="text">
+                    </div>
+                    <div class="input-box">
+                        <span>Postcode</span>
+                        <input type="number" placeholder=" ">
+                    </div>
+                    <div class="input-box">
+                        <span>State/Territory</span>
+                        <input type="button" id="state" onclick=""> <!--add js-->
+                        <div id="state-names" class="state-names">
+                            <p>VIC</p>
+                            <p>NSW</p>
+                            <p>TAZ</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="number" placeholder="Phone Number (optional)">
+                    </div>
+                </div>
+
+                <button id="continue"> Continue to Shipping</button>
+
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="order-summary">Order Summary</div>
+        <div class="row-item">
+            <img src="A3/wicked-king.jpg" alt="">
+            <p id="book-name"> The Wicked King (Folk of Air Series #2)</p>
+            <p id="book-author">Holly Black</p>
+            <p id="book-price"><b>$11.69</b></p>
+        </div>
+        <div class="row-item">
+            <img src="A3/wicked-king.jpg" alt="">
+            <p id="book-name"> The Wicked King (Folk of Air Series #2)</p>
+            <p id="book-author">Holly Black</p>
+            <p id="book-price"><b>$11.69</b></p>
+        </div>
+        <div class="row-item">
+            <p class="sub-total">Sub Total</p>
+            <p class="pricing"><b>$11.69</b></p>
+        </div>
+        <div class="row-item">
+            <p id="shpin"> Shipping</p>
+            <p class="shipping-price"><b> Calculated at next step</b></p>
+        </div>
+        <div class="row-item">
+           <p id="total"><b>Total</b></p> 
+           <p class="tax">Including tax (GST 10%)</p>
+           <p class="total-price"><b>$11.69</b></p>
+        </div>
+        <div class="row-item">
+            <p class="gift-card"> <b>Gift Card or Discount Coupon</b></p>
+            <input type="text" placeholder="Gift Card or Discount Coupon">
+            <button><img src="" alt=""></button> <!--Arrow img-->
+        </div>
+        <div class="row-item">
+            <img src="" alt=""> <!--arrow-->
+            <p class="return">Return to Cart</p>
+            <hr>
+            <ul id="nav">
+                <li><u>Refund Policy</u></li>
+                <li><u>Shipping Policy</u></li>
+                <li><u>Term of Service</u></li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>
