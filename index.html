@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="homepagestylesheet.css">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="Homepage.js"></script>
 </head>
 <body>
     <header>
@@ -15,44 +16,68 @@
                 <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
             </div>
 
-            <div class="nav-content">
-                <div class="searchbar">
-                <input type="text" name="search" class="search" placeholder="Search" onclick=" "> <!--dropdownsearch-->
-                <button class="go" id="go"> <img src="A3\search-icon.png" alt="search-icon"  width: 100%></button>
-                    <!--<div class="search-items">
-                        <div class="book-1-search">
-                            <img src="" alt="">
-                            <p class="search-title">Book Title</p>
-                            <p class="search-author">Author</p>
-                            <p class="bestseller-search">#1 Bestseller</p>
-                            <p class="search-price"> Price</p>
-                            <p class="search-discount">discount</p>
-                        </div>
-                        <div class="book-2-search">
-                            <img src="" alt="">
-                            <p class="search-title">Book Title</p>
-                            <p class="search-author">Author</p>
-                            <p class="bestseller-search">#1 Bestseller</p>
-                            <p class="search-price"> Price</p>
-                            <p class="search-discount">discount</p>
-                        </div>
-                        <div class="book-3-search">
-                            <img src="" alt="">
-                            <p class="search-title">Book Title</p>
-                            <p class="search-author">Author</p>
-                            <p class="bestseller-search">#1 Bestseller</p>
-                            <p class="search-price"> Price</p>
-                            <p class="search-discount">discount</p>
-                        </div>
-                        <div class="author-rec">
-                            <p> View more books by</p>
-                            <p class="author-name">Holly Black</p>
-                        </div>
-
+            <div class="topnav">
+                <div class="search-bar">
+                     <div class="input-box">
+                            <input type="text" name="search" class="search" placeholder="Search" onclick=" "> <!--dropdownsearch-->
+                    </div>
+                     <div class="search-button">
+                             <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
+                     </div>
+                       <!-- <div class="search-drop">
+                            <div class="search-items">
+                                <div class="book-1-search">
+                                    <div class="search-img">
+                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="img">
+                                    </div>
+                                    <div class="searchcontent">
+                                        <p class="search-title">Book Title</p>
+                                        <p class="search-author">Author</p>
+                                        <p class="bestseller-search">#1 Bestseller</p>
+                                        <p class="search-price"> Price</p>
+                                        <p class="search-discount">discount</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="book-1-search">
+                                    <div class="search-img">
+                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="img">
+                                    </div>
+                                    <div class="searchcontent">
+                                        <p class="search-title">Book Title</p>
+                                        <p class="search-author">Author</p>
+                                        <p class="bestseller-search">#1 Bestseller</p>
+                                        <p class="search-price"> Price</p>
+                                        <p class="search-discount">discount</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="book-1-search">
+                                    <div class="search-img">
+                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="img">
+                                    </div>
+                                    <div class="searchcontent">
+                                        <p class="search-title">Book Title</p>
+                                        <p class="search-author">Author</p>
+                                        <p class="bestseller-search">#1 Bestseller</p>
+                                        <p class="search-price"> Price</p>
+                                        <p class="search-discount">discount</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="book-1-search">
+                                <div class="author-rec">
+                                    <p class="author-text"> View more books by</p>
+                                    <p class="author-name"><b>Holly Black</b></p>
+                                </div>
+                            </div>
+                                
+                                </div>
+                                </div>
                     </div>-->
                 </div>
-
-                <button class="menubutton" onclick=""> <img src="A3\menu-icon.png" alt="menu-icon"></button> <!--js for opening menu-->
+                <div class="menu">
+                <button class="menubutton" onclick=""> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
                     <!--<div class="drop-down-menu">
                         <p class="menu-title">Menu</p>
                         <img src="" alt=""> <!- x to close->
@@ -105,21 +130,22 @@
                         </div>
                     </div>-->
 
-                <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon"></button>
+                <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
+            </div>
             </div>
         </div>    
     </header>
 
-    <div class="free-shipping" style="text-align: center;">
-        <p class="content-free">
+    <div class="free-shipping">
+        <p class="content-free"  >
             <img src="A3/carbon_delivery-truck.png" alt="carbon_delivery-truck" class="free-truck">
             Free Shipping over $75
         </p>
     </div>
     
 
-    <div class="banner" id="banner">
-        <img src="A3/Screenshot 2023-04-21 161942.png" alt=""> <!--temp image-->
+    <div class="banner" id="banner-1">
+        <img src="A3/Screenshot 2023-04-21 161942.png" alt="" class="banner-img"> <!--temp image-->
     </div>
 
     <section class="genere-bar">
@@ -278,53 +304,111 @@
     <button class="view-full-catalogue">View Full Catalogue</button>
     </div>
     
-    <div class="rec-header">
-        <h2 class="book-recs">Local Authors</h2>
-        <h3 class="view-all" href=""> <u>View All</u></h3> <!--Like to product page if made-->
-    </div>
-    <section class="product-grid">
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
-        <div class="product">
-            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-            <figcaption>Name</figcaption>
-            <p class="info-author">Author Name</p>
-            <p class="info-price">Price</p>
-        </div>
+    
+        <h1> Top Picks from the Catalogue <h1>
+
+            <!-- SAM START making the carousel for three popular books-->
+            
+                    <!-- Slideshow container -->
+            <div class="slideshow-container fade">
+            
+                <!-- Full images with numbers and message Info -->
+                <div class="Containers">
+                  <div class="MessageInfo">1 / 3</div>
+                  <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1574535986i/26032825.jpg" style="width:100%">
+                  <h4>The Cruel Prince<h4>
+                    <h5>by Holly Black <h5>
+                        <h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nisl libero. Sed quis elit sed lacus eleifend placerat tristique sit amet turpis. Morbi vel consequat metus.”<h6>
+                </div>
+              
+                <div class="Containers">
+                  <div class="MessageInfo">2 / 3</div>
+                  <img src="https://media1.popsugar-assets.com/files/thumbor/6pwpfj9AGEGlNh2-o3gY4EjHLbA/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/11/08/137/n/44498184/67ab3b0c3f94e190_5_78734/i/Great-Gatsby.jpg" style="width:100%">
+                  <h4>The Great Gatsby<h4>
+                    <h5>by F Scott Fitzgerald <h5>
+                        <h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nisl libero. Sed quis elit sed lacus eleifend placerat tristique sit amet turpis. Morbi vel consequat metus.”<h6></h7>
+                </div>
+              
+                <div class="Containers">
+                  <div class="MessageInfo">3 / 3</div>
+                  <img src="https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg" style="width:100%">
+                  <h4>The Lord of the Rings<h4>
+                    <h5>by J R R Tolkien <h5>
+                        <h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nisl libero. Sed quis elit sed lacus eleifend placerat tristique sit amet turpis. Morbi vel consequat metus.”<h6></h7>
+                </div>
+              
+                <!-- Back and forward buttons -->
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The circles/dots -->
+              <div style="text-align:center">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+              </div> 
+              
+              <div class="rec-header">
+                <h2 class="book-recs">Local Authors</h2>
+                <h3 class="view-all" href=""> <u>View All</u></h3> <!--Like to product page if made-->
+            </div>
+            <section class="product-grid">
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+                <div class="product">
+                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <figcaption>Name</figcaption>
+                    <p class="info-author">Author Name</p>
+                    <p class="info-price">Price</p>
+                </div>
+            </section>
+            
+                    <!--need to add in the calendar and events stuff. should the calendar be functional? they won't look at it becayse it's not a part of the purchasing line-->
+                    
+                <img src="https://lh3.googleusercontent.com/7fmx4wbF_MT1V5FGycV0wYgBP3kwoyy9nnXKceI5RrMSUA64hig3XrW6z1CBegwDCObm7MqgQZHUNY8VNIGdTFXgwaNDbQmRbZ_4f-M" style="width:100%">
+                <!--SAM END-->>
+                </section>
+            
+            
+            </body>
+            </html>
+            
     </section>
 
 
