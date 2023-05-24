@@ -265,7 +265,7 @@ padding: 10px;
   bottom: 1vw;
 }
 
-.search-img, .searchcontent{
+.search-result, .searchcontent{
   display: inline-block;
   vertical-align: middle;
 }
