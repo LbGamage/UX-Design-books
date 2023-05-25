@@ -320,7 +320,7 @@ padding: 10px;
 }
 
 /* ===========================
-  ====== Medua Query for Search Box ====== 
+  ====== responsive limits ====== 
   =========================== */
 
 @media only screen and (min-width : 150px) and (max-width : 1000px)
@@ -379,7 +379,7 @@ padding: 10px;
 /*lihini end*/
 
  /*SAM START */
- * {box-sizing:border-box}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -533,8 +533,6 @@ transform: translateY(-50%) scale(0.98);
 /*SAM END*/
 /*SAM START 7:52pm 11/05/23*/
 ul {list-style-type: none;}
-body {font-family: 'Inter';
-color: black;}
 
 /* Month header */
 .month {
@@ -630,7 +628,7 @@ color: black;}
     align-items: center;
   }
   
-  img {
+  img { /*lihini: I specified this class cause it was causing issues throughout the page*/
     max-width: 100%;
     height: auto;
     margin-top: 0px;
