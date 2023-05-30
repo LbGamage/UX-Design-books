@@ -90,16 +90,18 @@ body{
    }
 
    .input-group{
-    display: inline;
-    padding-bottom: %;
+    position: relative;
+    padding-top: 10px;
+    margin-left: ;
+  
    }
 
   .container{
     display: block;
+  
     position: relative;
     align-items: center;
-    align-content: center;
-    text-align: center;
+
     top: 3vw;
     right: 4vw;
   }
