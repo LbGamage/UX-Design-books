@@ -1,3 +1,5 @@
+/*Lihini Start*/
+
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Sans+Thai&family=IBM+Plex+Serif&family=Josefin+Sans&display=swap');
 
 body{
@@ -12,9 +14,7 @@ body{
   color: #DFBD65;
   background-color: #1B605D;
   display: flexbox;
-  height: 115px;
-  
-
+  height: 8vw;
 }
 
 .topnav{
@@ -68,25 +68,7 @@ body{
   display: flex;
 }
 
-
-
-/*.searchbar input[type=text] {
-  float: none;
-  display: flex;
-  text-align: left;
-  width: 90%;
-  height: 60%;
-  margin: 0;
-  padding-left: 1vw;
-  padding-right: 2vw;
-  border-radius: 50px;
-  border: none;
-}
-*/
-
-
-
- .menubutton, .cartbutton{
+.menubutton, .cartbutton{
   border: none;
   height: 2.5vw;
   width: 2.5vw;
@@ -112,6 +94,13 @@ right: 25%;  }
   display: flex;
   font-family: 'IBM Plex Serif', serif;
   font-size: 1vw;
+  align-items: center;
+  text-align: center;
+  padding-left: 1vw;
+}
+
+.figimg{
+  height: 3vw;
 }
 
 .grid-product-image{
@@ -142,170 +131,94 @@ right: 25%;  }
   border-radius: 25px;
   font-size: 1.1rem;
   cursor: pointer;
- }
+  }
 
- .catalogue-button{
+  .catalogue-button{
   text-align: center;
- }
+  }
 
- .rec-header{
+  .rec-header{
   display: flex;
   align-items: center;
   margin-left: 2vw;
   margin-right: 2vw;
- }
+  }
 
- .view-all{
+  .view-all{
   padding: 2%;
   cursor: pointer;
- }
+  }
 
- .product-grid{
+  .product-grid{
   text-align: center;
   font-size: 1vw;
- }
+  }
 
- .product{
-  background-color: #ffffff;
-  padding-top: 2vw;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   }
+.product{
+background-color: #ffffff;
+padding-top: 2vw;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-   .carousel-1{
-    text-align: center;
-    padding-top: 5vw;
-
-   }
-
-   .caro-img{
-    width:40vw;
-   }
-
-   .banner-img{
-    width: 100%;
-   }
-
-/*
-.genere-bar{
-  display: flex;
-  font-family: 'IBM Plex Serif', serif;
-}
-
-.grid-product-image{
-
-  width: 50%;
-}
-
-.product-grid{
-  display: flex;
-}
-.view-all{
-  display:grid;
-  color: #A1483D;
-}
-
-.view-full-catalogue{
-  background-color: #F87E60;
-  color: #ffffff;
-  padding: 0.8%;
-  padding-left: 3%;
-  padding-right: 3%;
-  font-family:'IBM Plex Serif', serif;
-  border: 0;
-  display: inline-block;
+  .carousel-1{
   text-align: center;
-  border-radius: 25px;
-  font-size: 1.1rem;
-  cursor: pointer;
- }
+  padding-top: 5vw;
 
- .catalogue-button{
-  text-align: center;
- }
+  }
 
- 
+  .caro-img{
+  width:40vw;
+  }
 
-.searchbar{
-  display: flex;
-  position: absolute;
-  width: 30%;
-  height: 10%;
-  top: 2vw;
- 
-}
+  .banner-img{
+  width: 100%;
+  }
 
-.go, .menubutton, .cartbutton{
-  border: none;
-  display: block;
-  height: 4vw;
-  width: 4vw;
-  padding: 2%;
-  border-radius: 50%;
-  text-align: center;
-  align-items: center;
-}
 
-.go img, .menubutton img, .cartbutton img{
-  align-items: center;
-  height: 4vw;
-  width: 4vw;
-  padding: 2%;
-  border-radius: 50%;
-}
-*/
-
-/* rewrite the part below */
 
 .input-box-search {
-padding-left: 70%;
-
-
+  padding-left: 70%;
+  
+  
 }
 
 .search
 {
-border: none;
-overflow: auto;
-border-radius: 50px;
-font-family:'IBM Plex Serif', serif;
-padding-left: 5px;
-height: 35px;
-width: 260px;
+  border: none;
+  overflow: auto;
+  border-radius: 50px;
+  font-family:'IBM Plex Serif', serif;
+  padding-left: 5px;
+  height: 2.4vw;
+  width: 18vw;
 }
 
 .search-icon{
-border: none;
-height: 2.5vw;
-width: 2.5vw;
-padding: 10%;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color:#D9D9D9;
-; 
+  border: none;
+  height: 2.5vw;
+  width: 2.5vw;
+  padding: 10%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#D9D9D9;
+  ; 
 }
 
-/*.search-img{
-position: relative;
-left: 35%;
-}*/
-
-
-
 .search-img, .menu-img, .cart-img{
-width: 2vw;
+  width: 2vw;
 }
 
 .search-bar{
-padding-left: 50vw;
-display: flex;
+  padding-left: 50vw;
+  display: flex;
 }
 
 .search-button{
-width: 25px;
-position: relative;
-right: 37px;
+  width: 5vw;
+  position: relative;
+  right: 2.5vw;
 }
 .search-items{
 background-color: #ffffff;
@@ -321,121 +234,152 @@ padding: 10px;
 
 
 .search-drop{
-padding-right: 10%;
-background-color: #F5F5F5;
-color: #F5F5F5;
-font-family: 'IBM Plex Serif', serif;
+  background-color: #F5F5F5;
+  color: #F5F5F5;
+  font-family: 'IBM Plex Serif', serif;
+  display: flex;
+  position: relative;
+  right: 40%;
+  top: 3vw;
+  width: 50vw;
+  z-index: 10;
 
 }
 .search-items{
-margin: 20px auto;
-float: right;
-width: 30%;
-background-color: #F5F5F5;
-box-sizing: border-box;
+  float: right;
+  width: 30vw;
+  background-color: #F5F5F5;
+
 }
 
-.book-1-search{
-margin: 5px;
-}
 
-.img{
-width: 6vw;
+.searchimg{
+  width: 5vw;
 }
 
 .searchcontent{
-display: inline-block; 
-color: #000000; 
-padding-left: 15%;  
+  display: inline-block; 
+  color: #000000; 
+  padding-left: 15%; 
+  position: relative;
+  bottom: 1vw;
 }
 
-.search-img, .searchcontent{
-display: inline-block;
-vertical-align: middle;
+.search-result, .searchcontent{
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .search-price, .search-discount{
-display: inline;
+  display: inline;
 }
 
 .author-text, .author-name{
-display: inline;
+  display: inline;
 }
 
 .search-title{
-font-weight: 400;
-font-size: large;
-margin-bottom: -15%;
-font-size: 1.5vw;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: -15%;
+  font-size: 1.5vw;
 
 }
 
 .search-author{
-font-size: medium;
-font-weight: 400;
-margin-bottom: -15%;
-font-size: 1.1vw;
-min-width: 0.5vw;
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: -15%;
+  font-size: 1.1vw;
+  min-width: 0.5vw;
 }
 
 .bestseller-search{
-margin-top: 15%;
-font-size: 0.8vw;
+  margin-top: 15%;
+  font-size: 0.8vw;
 }
 
 .search-price{
-font-weight: bold;
-font-size: 1.5vw;
-
+  font-weight: bold;
+  font-size: 1.5vw;
+  
 }
 
 
 .search-discount{
-font-size: 1vw;
-text-decoration: line-through;
+  font-size: 1vw;
+  text-decoration: line-through;
 }
 
 .author-rec{
-font-weight: 400;
-font-size: large;
-font-size: 1.2vw;
-color: #000000;
+  font-weight: 400;
+  font-size: large;
+  font-size: 1.2vw;
+  color: #000000;
 
 }
-/* responsive sizing*/
+
+/* ===========================
+  ====== responsive limits ====== 
+  =========================== */
 
 @media only screen and (min-width : 150px) and (max-width : 1000px)
 {
-{}
-.search
-{
-  display: flex;
+
+  .header-bar{
+    height: 9vw;
+  }
+
+  .search-bar{
+    padding-left: 40vw;
+    display: flex;
+  }
+
+
+  .search
+  {
+    display: flex;
+    height: 3vw;
+    width: 15vw;
+    margin: 0 auto;
+    font-size: 1.5vw;
+  }
+
+  .search-button{
+    position: relative;
+    right: 3vw;
+    top: 0.1vw;
+    display: flex;
+    height: 3vw;
+    width: 15vw;
+    margin: 0 auto;
+    font-size: 1.5vw;
+  }
+
+  .search-icon{ 
+    height: 3vw;
+    width: 3vw;
+    padding: 10%;
+    border-radius: 50%;
+  }
+
+  .menu{
+    display: flex;
+    padding-left: 10vw;
+  }
+
+  .menubutton, .cartbutton{
+  position: relative;
+  top: 0.1vw;
   height: 3vw;
-  width: 15vw;
-  margin: 0 auto;
-  font-size: 1.5vw;
-}
-
-.search-button{
-  padding-left: 12vw;
-  display: flex;
-  height: 3vw;
-  width: 15vw;
-  margin: 0 auto;
-  font-size: 1.5vw;
-}
-
-.menu{
-  display: flex;
-  padding-left: 10vw;
-}
-
+  width: 3vw;
+  }
 }
 
 /*lihini end*/
 
  /*SAM START */
- * {box-sizing:border-box}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -589,8 +533,6 @@ transform: translateY(-50%) scale(0.98);
 /*SAM END*/
 /*SAM START 7:52pm 11/05/23*/
 ul {list-style-type: none;}
-body {font-family: 'Inter';
-color: black;}
 
 /* Month header */
 .month {
@@ -698,7 +640,7 @@ color: black;}
     align-items: center;
   }
   
-  .mothersDay {
+  .mothersDay { /*lihini: I specified this class cause it was causing issues throughout the page*/
     max-width: 100%;
     height: auto;
     margin-top: 0px;

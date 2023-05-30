@@ -82,54 +82,47 @@ body{
     font-weight: 600;
    }
 
-   .input-box{
-      display: inline;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
+   /*form-body= form-body
+   row= input-row
+   inputgroup= form-inputbox*/
+   
+   .form-body{
+    background-color: #EFB784;
    }
 
-   .input-group{
-    display: inline;
-    padding-bottom: %;
+   .main-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #6F6F6F;
    }
 
-  .container{
-    display: block;
-    position: relative;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    top: 3vw;
-    right: 4vw;
+   .input-row{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .form-inputbox{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin: 10px 5px;
+   }
+
+   .form-names{
+    color: #1B605D;/*temp*/
+    font-size: 15px;
+    font-weight: 600;
+   }
+
+  .address-column{
+    flex-direction: column;
   }
 
-  .text-box{
-    border: 1.5px solid #B2BCCA;
-    border-radius: 4px; 
-   }
-
-   .emailbox, .address, .address2{
-    background-color: #EFB784;
-    width: 25vw;
-    position: relative;
-    left: 7vw;
-   }
-
-   input{
-    background-color: #fff;
-    padding-top: 2%;
-   }
-
-   span, .form-names{
-    background-color: #fff;
-    position: relative;
-    padding: 0.5%;
-    font-size: small;
-    left: 12%;
-    bottom:20px;
-   }
-
+  .form-searchimg{
+    width: 2vw;
+    height: 2vw;
+  }
+ 
    .express{
     text-align: center;
    }

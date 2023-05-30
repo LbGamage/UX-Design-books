@@ -43,23 +43,24 @@
             </div>
 
         <h3 class="shipping-address"> Shipping Address</h3> <br>
-        <div class="container">
-            <form action="">
-                <div class="input-group inputnames">
-                    <div class="input-box">    
-                        <span>First Name</span>
+        <div class="form-body">
+            ]
+            <form action="" class="main-form">
+                <div class="input-row">
+                    <div class="form-inputbox">    
+                        <label class="form-names">First Name</label>
                         <input type="text" class="text-box">
                     </div>
-                    <div class="input-box">
-                        <span>Last Name</span>
+                    <div class="form-inputbox">
+                        <label class="form-names">Last Name</label>
                         <input type="text" class="text-box">
                     </div>          
 
                 </div>
 
-                <div class="input-group">
-                    <div class="input-box">
-                        <p class="form-names">Email Address</p>
+                <div class="input-row">
+                    <div class="form-inputbox">
+                        <label class="form-names">Email Address</label>
                         <input type="text" class="text-box emailbox">
                         <img src="" alt=""> <!--tick or cross to verify email, could be replaced for error message-->
                         <p><input type="checkbox" class="checkbox" name="checkbox" value="yes">
@@ -68,31 +69,31 @@
                     </div>
                 </div>    
 
-                <div class="input-group">
+                <div class="input-row address-column">
 
-                    <div class="input-box">
-                        <span>Address</span>
+                    <div class="form-inputbox">
+                        <label class="form-names">Address</label>
                         <input type="text" class="text-box address">
-                        <img src="A3/search-icon.png" alt=""> 
+                        <img src="A3/search-icon.png" alt="" class="form-searchimg"> 
                         <br>
                     </div>
-                    <div class="input-box">
+                    <div class="form-inputbox">
                         <input type="text" placeholder="Apartment, Suite, etc. (optional)" class="text-box address2">
                     </div>
                 </div>
                 <br>
 
-                <div class="input-group">
-                    <div class="input-box">
-                        <span>City</span>
+                <div class="input-row">
+                    <div class="form-inputbox">
+                        <label class="form-names">City</label>
                         <input type="text" class="text-box">
                     </div>
-                    <div class="input-box">
-                        <span>Postcode</span>
+                    <div class="form-inputbox">
+                        <label class="form-names">Postcode</label>
                         <input type="number" placeholder=" " class="text-box">
                     </div>
-                    <div class="input-box">
-                        <span>State/Territory</span>
+                    <div class="form-inputbox">
+                        <label class="form-names">State/Territory</label>
                         <input type="button" class="state" onclick=""> <!--add js-->
                         <div id="state-names" class="state-names">
                             <p>VIC</p>
@@ -103,8 +104,8 @@
                     </div>
                 </div>
 
-                <div class="input-group">
-                    <div class="input-box">
+                <div class="input-row">
+                    <div class="form-inputbox">
                         <input type="tel" placeholder="Phone Number (optional)" class="text-box">
                     </div>
                 </div>
