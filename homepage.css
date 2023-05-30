@@ -677,8 +677,20 @@ color: black;}
   .left {
     width: 40%;
   }
+.bannerCalendar {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
   
-  .right {
+  .Dates {
+    width: 40%;
+  }
+  
+  .banner {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -686,7 +698,7 @@ color: black;}
     align-items: center;
   }
   
-  img {
+  .mothersDay {
     max-width: 100%;
     height: auto;
     margin-top: 0px;
@@ -766,7 +778,7 @@ color: black;}
   text-align: center;
 }
 
-.locationButton{
+.footerButton{
   border: none;
   vertical-align: top;
   border-radius: 25px;
@@ -781,5 +793,6 @@ color: black;}
   text-align: left;
   align-items: center;
   justify-content: center;
+  padding: 1.3rem;
   color: rgba(0, 0, 0, 0.6)
 }
