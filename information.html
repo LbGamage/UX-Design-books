@@ -31,88 +31,106 @@
                 <button class="login">Login</button>
                 <p class="future">Not a member?</p>
                 <button class="sign-up">Sign Up</button>
-                <p class="future">OR</p>
+                <p class="future"> OR</p>
                 <p class="nav-location">Continue as Guest</p>
-                <hr>
+                <span class="seperator"></span>
                 
             </div>
 
             <div class="express">
                 <p class="future"> Express Checkout</p>
-                <img src="" alt=""> <!--paypal button-->
-                <p>OR</p>
-                </div>
+                <button class="ppbutton"><img src="A3/payapl.png" alt="payapl" class="paypal"></button>
+               <span class="strikethrough">OR</span>
+            </div>
 
-            <h3 class="shipping-address"> Shipping Address</h3> <br>
+            <div class="form-heading">
+                <h3 class="shipping-address"> Shipping Address</h3> 
+                <br>
+            </div>
+            
             <div class="form-body">
-                
+               
                 <form action="" class="main-form">
                     <div class="input-row">
-                        <div class="form-inputbox">    
+                        <div class="form-inputbox"> 
+                            <div class="formname-bg">  
                             <label class="form-names">First Name</label>
-                            <input type="text" class="text-box">
+                            </div> 
+                            <input type="text" class="text-box name">
                         </div>
                         <div class="form-inputbox">
+                            <div class="formname-bg">
                             <label class="form-names">Last Name</label>
-                            <input type="text" class="text-box">
+                            </div>
+                            <input type="text" class="text-box name">
                         </div>          
 
                     </div>
 
-                    <div class="input-row">
+                    <div class="input-row email-column">
                         <div class="form-inputbox">
+                            <div class="formname-bg">
                             <label class="form-names">Email Address</label>
+                            </div>
                             <input type="text" class="text-box emailbox">
-                            <img src="" alt=""> <!--tick or cross to verify email, could be replaced for error message-->
-                            <p><input type="checkbox" class="checkbox" name="checkbox" value="yes">
-                            <label for="checkbox" class="email-label">Email me with news and offers</label>
-                        </p>
+                            <img src="A3/email-verify-yes.png" alt="email-verify-yes" class="email-verifyimg"> <!--tick or cross to verify email, could be replaced for error message-->
                         </div>
-                    </div>    
+                            <div class="subscription">
+                            <input type="checkbox" class="checkbox" name="checkbox" value="yes">
+                            <label for="checkbox" class="email-label">Email me with news and offers</label>
+                        </div>
+                        </div>
+                      
 
                     <div class="input-row address-column">
 
                         <div class="form-inputbox">
+                            <div class="formname-bg">
                             <label class="form-names">Address</label>
+                            </div>
                             <input type="text" class="text-box address">
                             <img src="A3/search-icon.png" alt="" class="form-searchimg"> 
-                            <br>
+                            
                         </div>
                         <div class="form-inputbox">
                             <input type="text" placeholder="Apartment, Suite, etc. (optional)" class="text-box address2">
                         </div>
                     </div>
-                    <br>
 
-                    <div class="input-row">
+                    <div class="input-row add-details">
                         <div class="form-inputbox">
+                            <div class="formname-bg">
                             <label class="form-names">City</label>
+                            </div>
                             <input type="text" class="text-box">
                         </div>
                         <div class="form-inputbox">
+                            <div class="formname-bg">
                             <label class="form-names">Postcode</label>
+                            </div>
                             <input type="number" placeholder=" " class="text-box">
                         </div>
                         <div class="form-inputbox">
+                            <div class="formname-bg">
                             <label class="form-names">State/Territory</label>
-                            <input type="button" class="state" onclick=""> <!--add js-->
-                            <div id="state-names" class="state-names">
-                                <p>VIC</p>
-                                <p>NSW</p>
-                                <p>TAZ</p>
                             </div>
-
+                            <select id="state" name="state" class="text-box dropdown">
+                                <option value="VIC">VIC</option>
+                                <option value="QLD">QLD</option>
+                                <option value="usa">USA</option>
+                              </select>
+                            
                         </div>
                     </div>
 
-                    <div class="input-row">
+                    <div class="input-row add-details">
                         <div class="form-inputbox">
-                            <input type="tel" placeholder="Phone Number (optional)" class="text-box">
+                            <input type="tel" placeholder="Phone Number (optional)" class="text-box phonenumber">
                         </div>
                     </div>
-                    <br>
-
-                    <button class="continue"> Continue to Shipping</button>
+                    <div class="input-row continue-button">
+                        <button class="continue"> Continue to Shipping</button>
+                    </div>
 
                 </form>
                 
