@@ -235,7 +235,7 @@ body{
     border-width: 1px; 
     float: right;
     padding-top: 3%;
-    
+    overflow: hidden;
   }
 
    .row-item{
