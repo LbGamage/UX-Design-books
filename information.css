@@ -36,6 +36,9 @@ body{
     width: 50%;
   }
   
+  .payment-content{
+    justify-content:center ;
+  }
 
   .navigation{
     display: flex;
@@ -85,15 +88,16 @@ body{
    /*form-body= form-body
    row= input-row
    inputgroup= form-inputbox*/
-   
+
    .form-body{
-    background-color: #EFB784;
+    display: flex;
+    justify-content: center;
+    float: left;
    }
 
    .main-form{
     display: flex;
     flex-direction: column;
-    background-color: #6F6F6F;
    }
 
    .input-row{
