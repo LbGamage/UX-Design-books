@@ -647,7 +647,7 @@ ul {list-style-type: none;}
     margin-left: 20px;
   }
   
-  p {
+  .row p {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -728,13 +728,12 @@ ul {list-style-type: none;}
   font-size:small;
   padding: 20px;
   width: 300px;
-  height: 20px;
+  height: 8px;
   position: relative;
   left: 20%;
   right: 100%;
   text-align: left;
   align-items: center;
   justify-content: center;
-  padding: 1.3rem;
   color: rgba(0, 0, 0, 0.6)
 }
