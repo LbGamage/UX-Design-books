@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>homepage</title>
     <link rel="stylesheet" href="homepage.css">
     <script src="Homepage.js"></script>
 </head>
@@ -19,122 +19,152 @@
             <div class="topnav">
                 <div class="search-bar">
                      <div class="input-box-search">
-                            <input type="text" name="search" class="search" placeholder="Search" onclick=" "> <!--dropdownsearch-->
+                            <input type="text" name="search" class="search" placeholder="Search" onclick="searchBar()"> <!--dropdownsearch-->
                     </div>
-                     <div class="search-button">
+                    <div class="search-button">
                              <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
-                     </div>
+                    </div>
                 </div>
                 <div class="menu">
-                <button class="menubutton" onclick=""> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
-                    <!--<div class="drop-down-menu">
-                        <p class="menu-title">Menu</p>
-                        <img src="" alt=""> <!- x to close->
-                        <div class="main-menu">
-                            <hr>
-                            <p>Books</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Kids</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Sale</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Games & Toys</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Gifts, Stationery & More</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
+                    <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
+                    <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
+                </div>
+                <div class="search-drop" id="searchDrop">
+                    <div class="search-items">
+                        <div class="book-1-search">
+                            <a href="single-product-page.html">  
+                                <div class="search-img">
+                                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                                </div>
+                                <div class="searchcontent">
+                                    <p class="search-title">Book Title</p>
+                                    <p class="search-author">Author</p>
+                                    <p class="bestseller-search">#1 Bestseller</p>
+                                    <p class="search-price"> Price</p>
+                                    <p class="search-discount">discount</p>
+                                </div>
+                            </a>
+                            <hr class="searchdiv">
                         </div>
-
-                        <div class="sub-menu">
-                            <p>Events</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Book Club</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Blog</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Cafe</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Membership</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Locations</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Contact Us</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>About Us</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->                    
-                        </div>
-                        <div class="copyright">
-                            <p> Copyright 2000-2021 | All Rights Reserved</p>
-                        </div>
-                    </div>-->
-
-                <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
-            </div>
-              <div class="search-drop">
-                            <div class="search-items">
-                                <div class="book-1-search">
-                                    <div class="search-result">
-                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                    </div>
-                                    <div class="searchcontent">
-                                        <p class="search-title">Book Title</p>
-                                        <p class="search-author">Author</p>
-                                        <p class="bestseller-search">#1 Bestseller</p>
-                                        <p class="search-price"> Price</p>
-                                        <p class="search-discount">discount</p>
-                                    </div>
-                                    <hr class="searchdiv">
-                                </div>
-                                <div class="book-1-search">
-                                    <div class="search-result">
-                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                    </div>
-                                    <div class="searchcontent">
-                                        <p class="search-title">Book Title</p>
-                                        <p class="search-author">Author</p>
-                                        <p class="bestseller-search">#1 Bestseller</p>
-                                        <p class="search-price"> Price</p>
-                                        <p class="search-discount">discount</p>
-                                    </div>
-                                    <hr class="searchdiv">
-                                </div>
-                                <div class="book-1-search">
-                                    <div class="search-result">
-                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                    </div>
-                                    <div class="searchcontent">
-                                        <p class="search-title">Book Title</p>
-                                        <p class="search-author">Author</p>
-                                        <p class="bestseller-search">#1 Bestseller</p>
-                                        <p class="search-price"> Price</p>
-                                        <p class="search-discount">discount</p>
-                                    </div>
-                                    <hr class="searchdiv">
-                                </div>
-                                <div class="book-1-search">
-                                <div class="author-rec">
-                                    <p class="author-text"> View more books by</p>
-                                    <p class="author-name"><b>Holly Black</b></p>
-                                </div>
+                        <div class="book-1-search">
+                            <div class="search-img">
+                                <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
                             </div>
-                                
-                                </div>
-                                </div>
-                    </div>-->
+                            <div class="searchcontent">
+                                <p class="search-title">Book Title</p>
+                                <p class="search-author">Author</p>
+                                <p class="bestseller-search">#1 Bestseller</p>
+                                <p class="search-price"> Price</p>
+                                <p class="search-discount">discount</p>
+                            </div>
+                            <hr class="searchdiv">
+                        </div>
+                        <div class="book-1-search">
+                            <div class="search-img">
+                                <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                            </div>
+                            <div class="searchcontent">
+                                <p class="search-title">Book Title</p>
+                                <p class="search-author">Author</p>
+                                <p class="bestseller-search">#1 Bestseller</p>
+                                <p class="search-price"> Price</p>
+                                <p class="search-discount">discount</p>
+                            </div>
+                            <hr class="searchdiv">
+                        </div>
+                        <div class="book-1-search">
+                            <div class="author-rec">
+                                <p class="author-text"> View more books by</p>
+                                <p class="author-name"><b>Holly Black</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>      
+            
+        </div>
     </header>
+
+    <div class="drop-down-menu" id="menuDrop">
+        <div class="menu-content menu-header">
+          <h4 class="menu-title">Menu</h4>
+          <img src="a3/cross-black.png" alt="cross-black" class="cross-black" id="closeMenu"> 
+        </div>
+
+          <div class="main-menu">
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Books</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Kids</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Sale</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Games & Toys</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Gifts, Stationery & More</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+          </div>
+
+          <div class="sub-menu">
+            <div class="menu-content sub-content">
+              <p class="subjects small">Events</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Book Club</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Blog</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Cafe</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+             
+            <div class="menu-content sub-content">
+              <p class="subjects small">Membership</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Locations</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+            </div>
+             
+            <div class="menu-content sub-content">
+              <p class="subjects small">Contact Us</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+            </div>
+             
+            <div class="menu-content sub-content">
+              <p class="subjects small">About Us</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+            </div>
+          
+          <div class="copyright">
+              <p> Copyright 2000-2021 | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
 
     <div class="free-shipping">
         <p class="content-free"  >
@@ -148,8 +178,8 @@
         <img src="A3/Screenshot 2023-04-21 161942.png" alt="" class="banner-img"> <!--temp image-->
     </div>
 
-    <!--<section class="genere-bar">
-        <i class="arrow left"></i> <!--add css to create arrows or replace with images
+   <section class="genere-bar">
+        <i class="arrow left"></i> <!--add css to create arrows or replace with images-->
         <figure>
             <img src="A3/bestsellers.png" alt="bestseller" class="figimg bestsell">
             <figcaption>Bestsellers</figcaption>
@@ -191,7 +221,7 @@
             <figcaption>Cookbook</figcaption>
         </figure>
         <i class="arrow right"></i>
-    </section>    -->
+    </section>    
 
     <div class="rec-header">
         <h2 class="book-recs">New Releases</h2>
@@ -291,7 +321,6 @@
         </div>
     </section>
 
-    <h1> Top Picks from the Catalogue </h1>
     <div class="book-carousel">
         <!--requires mainly css so will leave it here for a bit-->
         <div class="carousel-1" id="carousel-1">
@@ -305,58 +334,56 @@
     <button class="view-full-catalogue">View Full Catalogue</button>
     </div>
     
+    <div class="rec-header">
+        <h2 class="book-recs">Local Authors</h2>
+        <h3 class="view-all" href=""> <u>View All</u></h3> <!--Like to product page if made-->
+    </div>
+    <section class="product-grid">
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+        <div class="product">
+            <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+            <figcaption>Name</figcaption>
+            <p class="info-author">Author Name</p>
+            <p class="info-price">Price</p>
+        </div>
+    </section>
     
-
-
-
-            <div class="rec-header">
-                <h2 class="book-recs">Local Authors</h2>
-                <h3 class="view-all" href=""> <u>View All</u></h3> <!--Like to product page if made-->
-            </div>
-            <section class="product-grid">
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-                <div class="product">
-                    <img class="grid-product-image" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
-                    <figcaption>Name</figcaption>
-                    <p class="info-author">Author Name</p>
-                    <p class="info-price">Price</p>
-                </div>
-            </section>      
+    <!--Lihini-->
                     
                     
                 <img src="https://lh3.googleusercontent.com/7fmx4wbF_MT1V5FGycV0wYgBP3kwoyy9nnXKceI5RrMSUA64hig3XrW6z1CBegwDCObm7MqgQZHUNY8VNIGdTFXgwaNDbQmRbZ_4f-M" style="width:100%" class="cafeBanner">
