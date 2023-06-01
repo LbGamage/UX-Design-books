@@ -1,10 +1,12 @@
 /*add this to main css file later since some of the classes are simillar*/
 
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Sans+Thai&family=IBM+Plex+Serif&family=Josefin+Sans&display=swap');
+/*delete whene merge*/ @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Sans+Thai&family=IBM+Plex+Serif&family=Josefin+Sans&display=swap');
 
 body{
   font-family: 'IBM Plex Sans Thai', sans-serif;
   margin: 0px;
+  box-sizing: border-box;
+  height: 100%;
 
 }
 
@@ -30,12 +32,17 @@ body{
   .logo-content{
     display: flex;
   }
+  /*to here*/
 
   .column{
     float: left;
     width: 50%;
+    height: 100%;
   }
   
+  .payment-content{
+    justify-content:center ;
+  }
 
   .navigation{
     display: flex;
@@ -52,11 +59,11 @@ body{
 
   }
 
-  .nav-location{
+  .nav-location{ /*??*/
 
   }
 
-  .future{
+  .future, .seperator{
     color: #6F6F6F;
 
   }
@@ -85,49 +92,144 @@ body{
    /*form-body= form-body
    row= input-row
    inputgroup= form-inputbox*/
-   
+
    .form-body{
-    background-color: #EFB784;
+    display: flex;
+    justify-content: center;
    }
 
    .main-form{
     display: flex;
     flex-direction: column;
-    background-color: #6F6F6F;
    }
 
    .input-row{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
    }
 
    .form-inputbox{
     display: flex;
     flex-direction: column;
     flex:1;
-    margin: 10px 5px;
+    margin: 1%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    
    }
 
    .form-names{
-    color: #1B605D;/*temp*/
-    font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
+    color: #828282;
+    background-color: #fff;
+    position: relative;
+    top: 1vw;
+    left: 0.5vw;
+    position: relative;
+    font-size: small;
+    padding-right: none;
+     }
+
+   .text-box{
+    border: 0.1vw solid #B2BCCA;
+    border-radius: 4px; 
+    background-color: #fff;
+    padding-top:0.5vw;
+    padding-bottom: 0.5vw;  
+    width: 100%;   
+    height: 1.5vw;
    }
 
-  .address-column{
+   .strikethrough, .seperator{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .strikethrough:before, .strikethrough:after, .seperato::after, .seperator::before{
+    content: " ";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .strikethrough:before {
+    margin-right: 10px
+  }
+  .strikethrough:after {
+    margin-left: 10px
+  }
+
+  .paypal{
+    height: 3.5vw;
+  }
+
+  .address-column, .email-column{
     flex-direction: column;
   }
 
-  .form-searchimg{
-    width: 2vw;
+  .email-column{
+    position: relative;
+    bottom: 1vw;
+  }
+
+  .subscription{
+    position: relative;
+    left: 1.5vw;
+    bottom: 1.5vw;
+  }
+
+  .address2{
+    margin: none;
+    position: relative;
+    bottom: 1.5vw;
+  }
+
+  .add-details{
+    position: relative;
+    bottom: 5vw;
+  }
+  .address-column{
+    position: relative;
+    bottom: 3vw;
+  }
+ 
+  .form-searchimg, .email-verifyimg{
+    width: 1.5vw;
+    height: 1.5vw;
+    position: relative;
+    bottom: 1.9vw;
+    left: 28vw;
+
+  }
+
+  .form-heading{
+    padding-left: 1vw;
     height: 2vw;
+    color: #6F6F6F;
+    padding-bottom: 2%;
+    padding-top: 2%;
   }
  
    .express{
     text-align: center;
    }
 
-   img{
+   select {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: none;
+  }
+
+  .dropdown{
+    height: 70%;
+  }
+
+ 
+   .bookorder-img{
     height: 6vw;
    }
 
@@ -137,8 +239,8 @@ body{
     border-width: 1px; 
     float: right;
     padding-top: 3%;
-    
-  }
+    height: 100%;
+    }
 
    .row-item{
     display: flex;
@@ -184,15 +286,22 @@ body{
     background-color: #F87E60;
     color: #ffffff;
     padding: 0.8%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-family:'IBM Plex Sans Thai', sans-serif;
     border: 0;
-    display: inline-block;
     text-align: center;
     border-radius: 25px;
     font-size: 1.1rem;
     cursor: pointer;
+    max-width: 332px;
+    max-height: 44px;
+   }
+
+   .continue-button{
+    position: relative;
+    left: 20%;
+    bottom: 5%;
    }
 
    .order-summary, .rec-header{ /*merge with the one in the main css*/
@@ -319,7 +428,7 @@ body{
     justify-content: center;
 }
 
-hr{
+.foot-divider{
   width: 45vw;
   height: 0%;
 }
@@ -331,17 +440,112 @@ hr{
   color: #6F6F6F;
 }
 
-.return, .order-footer, hr{
+.return, .order-footer, .foot-divider{
   position: relative;
   top: 13vw;
   float: bottom;
 }
 
-.shipping-address{
-  float: left;
+.ppbutton{
+  border: none;
+  background: none;
+}
+.ppbutton:hover{
+  cursor: pointer;
 }
 
-.inputnames{
-  background-color: #DFBD65;
-  position: relative;
+/*payment form*/
+
+.past-info{
+  width: 22vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+ 
 }
+.contact{
+  display: flex;
+  flex-direction: row;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.contact-details{
+  text-align: left;
+  padding-left: 4%;
+}
+
+.change{
+  color: #A1483D;
+  border: none;
+  background: none;
+  margin: none;
+  padding: none;
+  font-size: 0.8em;
+}
+
+.change:hover{
+  cursor: pointer;
+}
+
+.pastinfo-title{
+  color: #828282;
+  font-size: 0.8em;
+}
+
+.payment-form, .past-info{
+  border: 1px solid #B2BCCA;
+  border-radius: 4px;
+  width: 35vw;
+
+}
+
+.credit-details{
+  background-color: #EEEEEE;
+  border: 1px solid #D9D9D9;
+}
+
+ .credit-name{
+    font-weight: 400;
+    color: #828282;
+    background-color: none;
+    position: relative;
+    top: 0.5vw;
+    left: 0.5vw;
+    position: relative;
+    font-size: small;
+    padding-right: none;
+}
+
+.payment-label{
+  font-weight: 800;
+}
+
+.payment-title{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.billing-notice{
+  margin:0%;
+  padding: 0%;
+}
+
+.billing-form{
+  padding-bottom: 4%;
+  padding-top: 2%;
+}
+
+.shipping-address{
+  margin:0%;
+  padding: 0%;
+ 
+}
+
+.form3{
+  bakc
+
+}
+
+
