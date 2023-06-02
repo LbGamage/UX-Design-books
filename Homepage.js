@@ -85,4 +85,15 @@ function openCart() {
   }
 }
 
+function addedCart(){
+  const addedToCart = document.getElementById('addCart');
+
+  addedToCart.innerText = "Added to Cart";
+  setTimeout(()=>{
+    addedToCart.innerText ="Add to Cart"
+    addedToCart.style.backgroundColor="#A1483D"
+}, 2000);
+
+}
+
 //lihini end

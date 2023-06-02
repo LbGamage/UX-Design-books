@@ -633,6 +633,10 @@ width: 45%;
 }
 .add-to-cart:active{
   background-color: #F4C3BD;
+  transition-duration: 0.8s;
+}
+.add-to-cart:focus{
+  background-color: #F9C290;
 }
 
 
