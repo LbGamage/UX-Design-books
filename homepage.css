@@ -241,12 +241,13 @@ padding-top: 5vw;
   width: 20px;
   height: 20px;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   font-size: 0.8em;
   position: relative;
-  right: 50%;
+  right: 10%;
   top: 50%;
   font-family: 'IBM Plex Serif';
+  display: none;
   }
 
 .search-bar{
@@ -631,14 +632,6 @@ width: 2vw;
 background-color: #A1483D;
 width: 45%;
 }
-.add-to-cart:active{
-  background-color: #F4C3BD;
-  transition-duration: 0.8s;
-}
-.add-to-cart:focus{
-  background-color: #F9C290;
-}
-
 
 .divider{
 width: 98%;

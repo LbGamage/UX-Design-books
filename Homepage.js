@@ -87,12 +87,17 @@ function openCart() {
 
 function addedCart(){
   const addedToCart = document.getElementById('addCart');
+  const notif = document.getElementById('cartNotif');
 
+    notif.style.display = "block";
+  
   addedToCart.innerText = "Added to Cart";
+  addedToCart.style.backgroundColor="#F9C290"
   setTimeout(()=>{
     addedToCart.innerText ="Add to Cart"
     addedToCart.style.backgroundColor="#A1483D"
 }, 2000);
+
 
 }
 
