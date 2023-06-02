@@ -5,87 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    
-
-<link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="homepagestylesheet.css">
+    <script src="homepage.js"></script>
 
 </head>
 <body>
     <header>
-        <div class="header-bar">
-            <div class="logo-content">
-                <img src="A3/Logo.png" alt="Logo" class="logo">
-                <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
-            </div>
-
-            <div class="topnav">
-                <div class="search-bar">
-                     <div class="input-box-search">
-                            <input type="text" name="search" class="search" placeholder="Search" onclick=" "> <!--dropdownsearch-->
-                    </div>
-                     <div class="search-button">
-                             <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
-                     </div>
+            <div class="header-bar">
+                <a href="index.html">
+                <div class="logo-content" i> <!--a is a bit flaky so try to link it via js-->
+                    <img src="A3/Logo.png" alt="Logo" class="logo">
+                    <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
                 </div>
-                <div class="menu">
-                <button class="menubutton" onclick=""> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
-                    <!--<div class="drop-down-menu">
-                        <p class="menu-title">Menu</p>
-                        <img src="" alt=""> <!- x to close->
-                        <div class="main-menu">
-                            <hr>
-                            <p>Books</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Kids</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Sale</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Games & Toys</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Gifts, Stationery & More</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
+                </a>
+                
+    
+                <div class="topnav">
+                    <div class="search-bar">
+                         <div class="input-box-search">
+                                <input type="text" class="search" placeholder="Search" id="search" oninput="searchBar()"> <!--dropdownsearch-->
                         </div>
-
-                        <div class="sub-menu">
-                            <p>Events</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Book Club</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Blog</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Cafe</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Membership</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Locations</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>Contact Us</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->
-                            <hr>
-                            <p>About Us</p> 
-                            <i class="arrow right"></i> <!-add css to create arrows or replace with images->                    
+                        <div class="search-button">
+                                 <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
                         </div>
-                        <div class="copyright">
-                            <p> Copyright 2000-2021 | All Rights Reserved</p>
-                        </div>
-                    </div>-->
-
-                <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
-            </div>
-            <!-- <div class="search-drop">
-                            <div class="search-items">
-                                <div class="book-1-search">
+                    </div>
+                    <div class="menu">
+                        <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
+                        <button class="cartbutton" onclick="openCart()"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img" ></button>
+                        <div id="cartNotif"><span class="notif">1</span></div>
+                    </div>
+                    <div class="search-drop" id="searchDrop">
+                        <div class="search-items">
+                            <div class="book-1-search">
+                                <a href="single-product-page.html">  
                                     <div class="search-img">
                                         <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
                                     </div>
@@ -96,47 +48,168 @@
                                         <p class="search-price"> Price</p>
                                         <p class="search-discount">discount</p>
                                     </div>
-                                    <hr class="searchdiv">
+                                </a>
+                                <hr class="searchdiv">
+                            </div>
+                            <div class="book-1-search">
+                                <div class="search-img">
+                                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
                                 </div>
-                                <div class="book-1-search">
-                                    <div class="search-img">
-                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                    </div>
-                                    <div class="searchcontent">
-                                        <p class="search-title">Book Title</p>
-                                        <p class="search-author">Author</p>
-                                        <p class="bestseller-search">#1 Bestseller</p>
-                                        <p class="search-price"> Price</p>
-                                        <p class="search-discount">discount</p>
-                                    </div>
-                                    <hr class="searchdiv">
+                                <div class="searchcontent">
+                                    <p class="search-title">Book Title</p>
+                                    <p class="search-author">Author</p>
+                                    <p class="bestseller-search">#1 Bestseller</p>
+                                    <p class="search-price"> Price</p>
+                                    <p class="search-discount">discount</p>
                                 </div>
-                                <div class="book-1-search">
-                                    <div class="search-img">
-                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                    </div>
-                                    <div class="searchcontent">
-                                        <p class="search-title">Book Title</p>
-                                        <p class="search-author">Author</p>
-                                        <p class="bestseller-search">#1 Bestseller</p>
-                                        <p class="search-price"> Price</p>
-                                        <p class="search-discount">discount</p>
-                                    </div>
-                                    <hr class="searchdiv">
+                                <hr class="searchdiv">
+                            </div>
+                            <div class="book-1-search">
+                                <div class="search-img">
+                                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
                                 </div>
-                                <div class="book-1-search">
+                                <div class="searchcontent">
+                                    <p class="search-title">Book Title</p>
+                                    <p class="search-author">Author</p>
+                                    <p class="bestseller-search">#1 Bestseller</p>
+                                    <p class="search-price"> Price</p>
+                                    <p class="search-discount">discount</p>
+                                </div>
+                                <hr class="searchdiv">
+                            </div>
+                            <div class="book-1-search">
                                 <div class="author-rec">
                                     <p class="author-text"> View more books by</p>
                                     <p class="author-name"><b>Holly Black</b></p>
                                 </div>
                             </div>
-                                
-                                </div>
-                                </div>-->
+                        </div>
                     </div>
+                </div>
+                
             </div>
-        </div>    
-    </header>
+        </header>
+    
+        <div class="drop-down-menu" id="menuDrop">
+            <div class="menu-content menu-header">
+              <h4 class="menu-title">Menu</h4>
+              <img src="a3/cross-black.png" alt="cross-black" class="cross-black" id="closeMenu"> 
+            </div>
+    
+              <div class="main-menu">
+                  <hr>
+                  <div class="menu-content">
+                    <p class="subjects">Books</p> 
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+                  </div>
+                  <hr>
+                  <div class="menu-content">
+                    <p class="subjects">Kids</p> 
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+                  </div>
+                  <hr>
+                  <div class="menu-content">
+                    <p class="subjects">Sale</p> 
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+                  </div>
+                  <hr>
+                  <div class="menu-content">
+                    <p class="subjects">Games & Toys</p> 
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+                  </div>
+                  <hr>
+                  <div class="menu-content">
+                    <p class="subjects">Gifts, Stationery & More</p> 
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+                  </div>
+              </div>
+    
+              <div class="sub-menu">
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Events</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+                </div>
+                  
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Book Club</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+                </div>
+                  
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Blog</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+                </div>
+                  
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Cafe</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+                </div>
+                 
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Membership</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+                </div>
+                  
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Locations</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+                </div>
+                 
+                <div class="menu-content sub-content">
+                  <p class="subjects small">Contact Us</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+                </div>
+                 
+                <div class="menu-content sub-content">
+                  <p class="subjects small">About Us</p> 
+                  <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+                </div>
+              
+              <div class="copyright">
+                  <p> Copyright 2000-2021 | All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="popup-cart" id="sideBar">
+          <div class="pop-cart">
+            <div class="menu-content menu-header">
+              <h4 class="menu-title">My Shopping Cart</h4>
+              <img src="a3/cross-black.png" alt="cross-black" class="cross-black" id="closeMenu"> 
+            </div>
+            <div class="pop-ship">
+              <img src="A3/carbon_delivery-truck.png" alt="carbon_delivery-truck" class="free-truck">
+              <p class="popup-shipping">
+                  Add <b> $63.41 </b> of items to be eligible for <b> free shipping </b>                         </p>
+          </div>
+          <div class="book-1-search  popcart-item"> 
+            <a href="single-product-page.html">  
+                <div class="search-img">
+                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                </div>
+                <div class="searchcontent">
+                    <p class="search-title">Book Title</p>
+                    <p class="search-author">Author</p>
+                    <p class="bestseller-search">#1 Bestseller</p>
+                    <p class="search-price"> Price</p>
+                    <p class="search-discount">discount</p>
+                    <p class="qty">Qty: 1</p>
+                    <p class="remove">X Remove</p>
+                </div>
+            </a>
+            <hr class="searchdiv">
+
+            <hr class="searchdiv-bottom">
+            <div class="cart-bottom">
+              <span>Sub Total</span>
+              <span>$11.69</span>
+              <p>*Shipping and taxes calculated at checkout</p>
+              <button class="view-cart">View Cart</button>
+            </div>
+        </div>
+          </div>
+        </div>
+        <div class="bg" id="bg"></div>
 
     <div class="free-shipping">
         <p class="content-free"  >
@@ -156,7 +229,7 @@
             <h1>The Wicked King (Folk <br/> of Air series #2)</h1>
             <p class="product-author">Holly Black</p>
             <img src="A3/stars.png" alt="stars" class="stars"> <!--Star rating-->
-            <img src="A3/wicked-king.jpg" alt="wicked-king" class="main-product-image">
+            <img src="A3/wicked-bestseller.png" alt="wicked-bestseller" class="main-product-image">
             <div class="wishlist">
                 <img src="A3/wishlist.png" alt="wishlist" class="main-page-wishlist"> <!-- wishlist icon-->
                 <p class="add-wishlist"> Add To Wish-list</p>
@@ -180,18 +253,18 @@
                     <input type="number" name="postcode" class="postcode-search" placeholder="Enter Postcode"> 
                     <img src="A3/search-icon.png" alt="search-icon" class="postcode-search-img">
                 </div>
-            </div> 
+            </div>
             
-            <button class="add-to-cart"> Add to Cart </button>
+            <button class="add-to-cart" id="addCart" onclick="addedCart()"> Add to Cart </button>
 
             <div class="product-details">
-                <div class="detail">
-                <p class="teee">Description</p> <!--delete tee lol-->
-                <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow"> <!--add css to create arrows or replace with images--> 
+                <div class="detail"  onclick="descripDrop()">
+                <p class="descrip-title">Description</p>
+                <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow" onclick="roateArrow()"> <!--add css to create arrows or replace with images--> 
                 <!--Add description drop down functionality-->                  
                 </div>
                 <hr class="divider">
-                <div class="descrip-drop">
+                <div class="descrip-drop" id="descripText">
                     <p class="descriptions">
                         The enchanting and bloodthirsty sequel to the New York Times bestselling novel The Cruel Prince.<br><br>
                         <b>You must be strong enough to strike and strike and strike again without tiring.
@@ -205,17 +278,17 @@
                     </p> 
                 </div>
                 <div class="detail">
-                <p class="teee">About Author</p>
+                <p class="descrip-title">About Author</p>
                 <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow"> <!--add css to create arrows or replace with images-->                    
                 </div>
                 <hr class="divider">
                 <div class="detail">
-                <p class="teee">Product Details</p>
+                <p class="descrip-title">Product Details</p>
                 <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow"> <!--add css to create arrows or replace with images-->                    
                 </div>
                 <hr class="divider">
                 <div class="detail">
-                <p class="teee">Reviews</p>
+                <p class="descrip-title">Reviews</p>
                 <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow"> <!--add css to create arrows or replace with images--> 
                 </div>                   
                 <hr class="divider">
