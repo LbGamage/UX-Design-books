@@ -9,6 +9,8 @@
     <script src="Homepage.js"></script>
 </head>
 <body>
+
+    <!--Lihini Start-->
     <header>
         <div class="header-bar">
             <div class="logo-content">
@@ -19,7 +21,7 @@
             <div class="topnav">
                 <div class="search-bar">
                      <div class="input-box-search">
-                            <input type="text" name="search" class="search" placeholder="Search" onclick="searchBar()"> <!--dropdownsearch-->
+                            <input type="text" class="search" placeholder="Search" id="search" oninput="searchBar()"> <!--dropdownsearch-->
                     </div>
                     <div class="search-button">
                              <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
@@ -27,7 +29,7 @@
                 </div>
                 <div class="menu">
                     <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
-                    <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
+                    <button class="cartbutton" onclick="openCart()"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
                 </div>
                 <div class="search-drop" id="searchDrop">
                     <div class="search-items">
@@ -165,6 +167,45 @@
           </div>
         </div>
       </div>
+    <div class="popup-cart" id="sideBar">
+    <div class="pop-cart">
+        <div class="menu-content menu-header">
+        <h4 class="menu-title">My Shopping Cart</h4>
+        <img src="a3/cross-black.png" alt="cross-black" class="cross-black" id="closeMenu"> 
+        </div>
+        <div class="pop-ship">
+        <img src="A3/carbon_delivery-truck.png" alt="carbon_delivery-truck" class="free-truck">
+        <p class="popup-shipping">
+            Add <b> $63.41 </b> of items to be eligible for <b> free shipping </b>                         </p>
+    </div>
+    <div class="book-1-search  popcart-item"> 
+        <a href="single-product-page.html">  
+            <div class="search-img">
+                <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+            </div>
+            <div class="searchcontent">
+                <p class="search-title">Book Title</p>
+                <p class="search-author">Author</p>
+                <p class="bestseller-search">#1 Bestseller</p>
+                <p class="search-price"> Price</p>
+                <p class="search-discount">discount</p>
+                <p class="qty">Qty: 1</p>
+                <p class="remove">X Remove</p>
+            </div>
+        </a>
+        <hr class="searchdiv">
+
+        <hr class="searchdiv-bottom">
+        <div class="cart-bottom">
+        <span>Sub Total</span>
+        <span>$11.69</span>
+        <p>*Shipping and taxes calculated at checkout</p>
+        <button class="view-cart">View Cart</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="bg" id="bg"></div>
 
     <div class="free-shipping">
         <p class="content-free"  >
