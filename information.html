@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="information.css">
+    <script defer src="info-form.js"></script>
 </head>
 <body>
     <div class="header-bar">
@@ -49,47 +50,48 @@
             </div>
             
             <div class="form-body">
-               
-                <form action="" class="main-form">
+                <form action=""  class="main-form" id="main-form" onsubmit="return validateForm()">
                     <div class="input-row">
                         <div class="form-inputbox"> 
+                            <small>Error message</small>
                             <div class="formname-bg">  
                             <label class="form-names">First Name</label>
                             </div> 
-                            <input type="text" class="text-box name">
+                            <input type="text" class="name" id="first-name" name="first-name">
                         </div>
                         <div class="form-inputbox">
+                            <small>Error message</small>
                             <div class="formname-bg">
                             <label class="form-names">Last Name</label>
                             </div>
-                            <input type="text" class="text-box name">
+                            <input type="text" class="name" id="last-name">
                         </div>          
 
                     </div>
 
                     <div class="input-row email-column">
                         <div class="form-inputbox">
+                            <small>Error message</small>
                             <div class="formname-bg">
                             <label class="form-names">Email Address</label>
                             </div>
-                            <input type="text" class="text-box emailbox">
-                            <img src="A3/email-verify-yes.png" alt="email-verify-yes" class="email-verifyimg"> <!--tick or cross to verify email, could be replaced for error message-->
+                            <input type="email" class="emailbox" id="email">
                         </div>
-                            <div class="subscription">
+                        <div class="subscription">
                             <input type="checkbox" class="checkbox" name="checkbox" value="yes">
                             <label for="checkbox" class="email-label">Email me with news and offers</label>
                         </div>
-                        </div>
+                    </div>
                       
 
                     <div class="input-row address-column">
 
                         <div class="form-inputbox">
+                            <small>Error message</small>
                             <div class="formname-bg">
                             <label class="form-names">Address</label>
                             </div>
-                            <input type="text" class="text-box address">
-                            <img src="A3/search-icon.png" alt="" class="form-searchimg"> 
+                            <input type="text" class="address" id="address">
                             
                         </div>
                         <div class="form-inputbox">
@@ -99,25 +101,34 @@
 
                     <div class="input-row add-details">
                         <div class="form-inputbox">
+                            <small>Error message</small>
                             <div class="formname-bg">
                             <label class="form-names">City</label>
                             </div>
-                            <input type="text" class="text-box">
+                            <input type="text" class="text-box" id="city">
                         </div>
                         <div class="form-inputbox">
+                            <small>Error message</small>
                             <div class="formname-bg">
                             <label class="form-names">Postcode</label>
                             </div>
-                            <input type="number" placeholder=" " class="text-box">
+                            <input type="number" placeholder=" " class="text-box" id="postcode">
                         </div>
                         <div class="form-inputbox">
+                            <small>Error message</small>
                             <div class="formname-bg">
                             <label class="form-names">State/Territory</label>
                             </div>
                             <select id="state" name="state" class="text-box dropdown">
+                                <option value="--"> </option>
                                 <option value="VIC">VIC</option>
                                 <option value="QLD">QLD</option>
-                                <option value="usa">USA</option>
+                                <option value="NT">NT</option>
+                                <option value="TAS">TAS</option>
+                                <option value="NSW">NSW</option>
+                                <option value="ACT">ACT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
                               </select>
                             
                         </div>
@@ -125,11 +136,12 @@
 
                     <div class="input-row add-details">
                         <div class="form-inputbox">
-                            <input type="tel" placeholder="Phone Number (optional)" class="text-box phonenumber">
+                            <small>Error message</small>
+                            <input type="tel" placeholder="Phone Number (optional)" class="phonenumber" id="phone-number">
                         </div>
                     </div>
                     <div class="input-row continue-button">
-                        <button class="continue"> Continue to Shipping</button>
+                        <button type="submit" class="continue">Continue to Shipping</button>
                     </div>
 
                 </form>
@@ -142,7 +154,7 @@
         <!--<div class="order-summary">Order Summary</div>-->
             <div class="order-items">
             <div class="row-item">
-                <img src="A3/wicked-king.jpg" alt="">
+                <img src="A3/wicked-king.jpg" alt="" class="bookorder-img">
                 <div class="order-content">
                     <p class="book-name"> The Wicked King (Folk of Air Series #2)</p>
                     <p class="book-author">Holly Black</p>
@@ -152,7 +164,7 @@
             </div>
             <div class="order-items">
             <div class="row-item">
-                <img src="A3/wicked-king.jpg" alt="">
+                <img src="A3/wicked-king.jpg" alt="" class="bookorder-img">
                 <div class="order-content">
                     <p class="book-name"> The Wicked King (Folk of Air Series #2)</p>
                     <p class="book-author">Holly Black</p>
@@ -184,7 +196,7 @@
             <img src="A3/right-arrow.png" alt="right-arrow" class="return-arrow"> <!--arrow-->
             <p class="return-text">Return to Cart</p>
         </div>
-        <hr>
+        <hr class="foot-divider">
         <div class="row-item order-footer">
             
             <ul class="nav-order">
@@ -197,5 +209,7 @@
         
     </div>
 </div>
+
+
 </body>
 </html>

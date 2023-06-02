@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
     <link rel="stylesheet" href="information.css">
+    <script defer src="payment-form.js"></script>
 </head>
 <body>
     <div class="header-bar">
@@ -28,12 +29,13 @@
                     <i class="nav-arrow"></i> <!--add css to create arrows or replace with images-->                    
                     <p class="nav-location"> Payment</p>
                 </div>
-                
+                <form id="form2">
                 <div class="form-body">
                     <div class="main-form">
                         <div class="past-info">
                             <div class="contact">
-                                <span class="pastinfo-title">Contact</span>                                <button class="change">change</button>
+                                <span class="pastinfo-title">Contact</span>                                
+                                <button class="change">change</button>
                             </div> 
                             <span class="contact-details">name@gmail.com</span>   
                             <hr class="form-div">
@@ -65,13 +67,16 @@
                         </div>
                         <div class="credit-details">
                             <div class="input-row">
-                                <div class="form-inputbox">   
-                                    <input type="text" class="text-box name" placeholder="Card Number">
+                                <div class="form-inputbox"> 
+                                    <input type="text" class="text-box cardnumber" placeholder="Card Number" id="card-number" maxlength="12">
+                                    <small class="pay-error">Error message</small>
                                 </div>
                             </div>  
-                            <div class="input-row">
+                            <div class="input-row  cardname">
                                 <div class="form-inputbox">   
-                                    <input type="text" class="text-box name" placeholder="Name on Card">
+                                    <input type="text" class="text-box" placeholder="Name on Card" id="card-name">
+                                    <small class="pay-error">Error message</small> 
+
                                 </div>
                             </div> 
                             <div class="input-row">
@@ -79,13 +84,15 @@
                                     <div class="formname-bg">
                                     <label class="credit-name">Expiry Date</label>
                                     </div>
-                                    <input type="date" class="text-box" placeholder="(MM/YY)">
+                                    <input type="month" class="text-box"  id="expiry-date">
+                                    <small class="pay-error">Error message</small> 
                                 </div>
                                 <div class="form-inputbox">
                                     <div class="formname-bg">
                                     <label class="credit-name">CVC</label>
                                     </div>
-                                    <input type="number" placeholder=" " class="text-box">
+                                    <input type="number" placeholder=" " class="text-box" id="cvc" maxlength="3">
+                                    <small class="pay-error">Error message</small> 
                                 </div>
                             </div>       
 
@@ -118,21 +125,22 @@
                         <div class="main-form">
                             <div class="past-info">
                                 <div class="payment-title">
-                                    <input type="radio" class="payment-type" name="radio" checked="checked">
+                                    <input type="radio" class="payment-type" name="radio2" checked="checked">
                                     <label for="radio" class="payment-label">Same as Shipping Address</label>
                                 </div>
                                 <hr class="form-div">
                                 <div class="payment-title">
-                                    <input type="radio" class="payment-type" name="radio">
+                                    <input type="radio" class="payment-type" name="radio2">
                                     <label for="radio" class="payment-label">Use Different Address</label>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="input-row continue-button">
+                        <button type="submit" class="continue shipping-button" id="ship-button"> Continue to Shipping</button>
+                    </div>
+                </form>
             </div>   
-                <div class="input-row continue-button">
-                    <button class="continue"> Continue to Shipping</button>
-                </div>
         </div>
     
     
