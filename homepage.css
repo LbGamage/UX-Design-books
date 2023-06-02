@@ -631,6 +631,9 @@ width: 2vw;
 background-color: #A1483D;
 width: 45%;
 }
+.add-to-cart:active{
+  background-color: #F4C3BD;
+}
 
 
 .divider{
