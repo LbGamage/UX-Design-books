@@ -32,20 +32,56 @@ function SlideShow(n) {
 
 //Lihini Start
 function searchBar() {
-  var x = document.getElementById("searchDrop");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  var searchInput = document.getElementById('search');
+    var x = document.getElementById("searchDrop");
+    if (searchInput.value!=='') {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
   }
+
+  function menuBar(){
+    var x = document.getElementById("menuDrop");
+    var background = document.getElementById("bg");
+    if (x.style.display === "none") {
+      background.style.display = "block";
+      x.style.display = "block";
+    } else {
+      background.style.display ="none";
+      x.style.display = "none";
+    }
+  }
+
+  function descripDrop(){
+    var x = document.getElementById("descripText");
+    var arrow = document.querySelector('.descrip-arrow');
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      arrow.classList.toggle('rotate');
+    } else {
+      x.style.display = "none";
+      arrow.classList.remove('rotate');
+
+    }
+  }
+
+  document.getElementById("linkHome").onclick = function () {
+    location.href = "index.html";
 }
 
-function menuBar(){
-  var x = document.getElementById("menuDrop");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+function openCart() {
+  var background = document.getElementById("bg");
+  var div = document.getElementById("sideBar");
+  
+  if (div.style.display === "none") {
+    background.style.display = "block";
+    div.style.display = "block";
+    document.body.style.overflow = "hidden"; // Hide the scrollbar
   } else {
-    x.style.display = "none";
+    background.style.display = "none";
+    div.style.display = "none";
+    document.body.style.overflow = "auto"; // Show the scrollbar
   }
 }
 
