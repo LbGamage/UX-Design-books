@@ -34,7 +34,7 @@
     font-style: none;
   }
 
-  a{
+  .home-link{
     text-decoration: none;
   }
 
@@ -683,6 +683,240 @@
     
          
       }
+
+      /*single product page css*/
+  .nav-past, .nav-location, .nav-future{
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .nav-past{
+    color: #6F6F6F;
+  }
+
+  .nav-arrow{
+    height: 0%;
+  }
+  
+  .rec-header{
+    display: flex;
+    align-items: center;
+   }
+
+.navigation{
+  display: flex;
+  font-size: 0.9em;
+  flex-direction: row;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  align-items: center;
+}
+
+.main-product-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-product-image{
+  width: 25vw;
+}
+
+ .stars{
+  width: 15%;
+  position: relative;
+  bottom: 3.5vw;
+}
+
+.main-page-wishlist{
+  width: 20%;
+  height: 20%;
+}
+
+.product-author{
+  font-size: 1.2em;
+  position: relative;
+  bottom: 2.5vw;
+}
+
+
+
+.wishlist{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3%;
+}
+
+
+
+.column{
+  float: left;
+  width: 50%;
+}
+
+.main-product-container::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.book-reccom{
+  display: flex;
+  flex-direction: column;
+}
+
+.series{
+  float:left;
+}
+
+.main-series-grid{
+  width: 40%;
+}
+
+.product-price{
+font-weight:bolder;
+font-size: 2em;
+}
+
+.delivery-text{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.truck{
+  width: 2vw;
+  height: 2vw;
+  padding-right:1%;
+}
+
+.postcode-bar{
+  position: relative;
+  bottom: 1vw;
+}
+.postcode-search{
+    border: none;
+    overflow: auto;
+    border-radius: 50px;
+    font-family:'IBM Plex Serif', serif;
+    padding-left: 5px;
+    height: 2.4vw;
+    width: 24vw;
+    background-color: #D9D9D9;
+}
+
+.postcode-search-img{
+  position: relative;
+  right: 3vw;
+  top: 0.5vw;
+  height: 2vw;
+  width: 2vw;
+}
+
+.add-to-cart, .view-cart{
+  background-color: #A1483D;
+  width: 45%;
+}
+
+
+.divider{
+  width: 98%;
+  position: relative;
+  right: 1vw;
+}
+
+.product-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.detail:hover{
+  cursor: pointer;
+}
+
+.descrip-arrow{
+  position: relative;
+  width: 2.5vw;
+  height: 2.5vw;
+  right: 4%;
+  transition: trasnform 0.5s ease;
+  transform-origin: center;
+
+}
+
+.descrip-arrow.rotate{
+  transform: rotate(180deg);
+}
+.descriptions{
+  text-align: left;
+}
+
+.descrip-drop{
+  display: none;
+}
+
+/*single product ends*/
+
+@media only screen and (max-width : 800px)
+  {
+ /*singe product page media*/
+
+ .main-product-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  
+}
+
+.truck, .postcode-search-img{
+  width: 4vw;
+  height: 4vw;  
+}
+
+.postcode-search-img{
+  top: 1vw;
+  right: 5vw;
+}
+
+.main-product-view, .product-info{
+  width: 85%;
+}
+
+.main-product-image{
+  width: 45vw;
+}
+
+.postcode-search{
+  height: 5vw;
+  width: 65vw;
+}
+
+.button-location{
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.add-to-cart{
+  width: 350px;
+  height: 50px;
+}
+
+.descrip-arrow{
+  width: 5vw;
+  height: 5vw;
+}
+}
 
   /*lihini end*/
 
