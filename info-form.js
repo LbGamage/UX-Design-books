@@ -136,5 +136,16 @@ function setSuccess(input, message){
   formInputBox.className = 'form-inputbox';
 }
 
+function orderSummary(){
+  var orderContent = document.getElementById('orderSummary');
+  var orderArrow = document.querySelector('.order-arrow');
+  if (orderContent.style.display === "none"){
+    orderContent.style.display = "block";
+    orderArrow.classList.add('rotate');
+  } else{
+    orderContent.style.display ="none";
+    orderArrow.classList.remove('rotate');
+  }
+};
 //Lihini End
 

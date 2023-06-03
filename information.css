@@ -20,6 +20,7 @@ body{
 
   .main-checkout{
     display: flex;
+    justify-content: space-between;
   }
   .logo{
     width: 10%;
@@ -33,10 +34,14 @@ body{
   }
   /*to here*/
 
-  .column{
-    float: left;
+  .column-form{
     width: 50%;
     min-height: 66vw;
+    flex: 1;
+  }
+
+  .form1{
+    order: 1;
   }
   
   .payment-content{
@@ -68,18 +73,17 @@ body{
     text-align: center;
   }
   
-  .login, .sign-up{
+  .login, .sign-up, .continue{
     background-color:#F9C290;
     color: #000;
-    padding: 0.8%;
-    padding-left: 8%;
-    padding-right: 8%;
+    width: 20vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
     font-family:'IBM Plex Sans Thai', sans-serif;
     border: 0;
-    display: inline-block;
     text-align: center;
     border-radius: 100px;
-    font-size: 1.5vw;
+    font-size: 1.2em;
     cursor: pointer;
     font-weight: 600;
    }
@@ -100,7 +104,8 @@ body{
 
    .input-row{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;   
+    background-color: ;
    }
 
    .form-inputbox{
@@ -124,7 +129,7 @@ body{
     padding-right: none;
      }
 
-   .form-inputbox input, .text-box{
+   .form-inputbox input, .dropdown{
     border: 0.1vw solid #B2BCCA;
     border-radius: 4px; 
     background-color: #fff;
@@ -134,9 +139,6 @@ body{
     height: 1.5vw;
    }
 
-   .form-inputbox.success input{
-    border-color:  #09c372;
-   }
 
    .form-inputbox.error-border input{
     border-color: #ff3860;
@@ -248,47 +250,39 @@ body{
     height: 70%;
   }
 
- 
-   .bookorder-img{
-    height: 6vw;
-   }
-
    .c-items{
     background-color: #F5F5F5;
     border:solid #D9D9D9;  
     border-width: 1px; 
-    float: right;
+    float: left;
     padding-top: 3%;
     overflow: hidden;
+    order: 2;
     }
 
+    .order-dropdown{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 5%;
+      padding-left: 5%;
+      font-size: 1em;
+      font-weight: 600;
+      display: none;
+    }
+
+    .order-arrow{
+      position: relative;
+      height: 4vw;
+      transition: trasnform 0.5s ease;
+      transform-origin: center;
+    }
+
+  
    .row-item{
     display: flex;
     width: 35vw;
-   }
-
-   .order-content{
-    position: relative;
-    padding-left: 2%;
-   }
-
-   .book-name{
-    font-size: 1.4vw;
-   }
-
-   .book-author{
-    position: relative;
-    bottom: 15%;
-    font-size: 1vw;
-
-   }
-
-   .book-price{
-    position: relative;
-    bottom: 50%;
-    float: right;
-    left: 20%;
-    font-size: 1.2vw;
    }
 
    .order-items{
@@ -302,26 +296,41 @@ body{
     border: solid 1px #d9d9d9;
    }
 
+   .order-content{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    padding-left: 3%;
+   }
+
+   .order-name{
+    padding-top: 2%;
+    font-size: 1.5vw;
+   }
+
+   .order-author{
+    font-size:1vw ;
+   }
+
+   .order-price{
+    position: relative;
+    text-align: right;
+   }
+
     .continue{
     background-color: #F87E60;
     color: #ffffff;
-    padding: 0.8%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family:'IBM Plex Sans Thai', sans-serif;
-    border: 0;
-    text-align: center;
-    border-radius: 25px;
     font-size: 1.1rem;
     cursor: pointer;
-    max-width: 332px;
-    max-height: 44px;
+    font-weight: 100;
+    width: 45%;
+
    }
 
    .continue-button{
-    position: relative;
-    left: 20%;
-    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
    }
 
    .order-summary, .rec-header{ /*merge with the one in the main css*/
@@ -335,64 +344,66 @@ body{
       font-weight: bold;
    }
 
-   .subtot, .tot, .taxes, .coupon, .return, .order-footer{
+   .subtot, .tot, .taxes, .coupon, .return, .order-footer,.ship, .gift-card{
     position: relative;
     left: 13%;
     padding: none;
-    width: 37vw;
+    width: 36vw;
     font-weight: bold;
-    font-size: 1.2vw;
+   }
+
+   .subtot{
+    display: flex;
+    justify-content: space-between;
    }
 
     .ship{
     position: relative;
     left: 13%;
     bottom: 3%;
-    padding: none;
-    width: 37vw;
+    justify-content: space-between;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 0.8em;
       }
 
     .tot{
-      bottom: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4vw;
+     
     }
 
     .taxes{
       font-weight: lighter;
-      font-size: 0.9vw;
+      font-size: 0.5em;
       color: #6f6f6f;
-      bottom: 8.5%;
+      position: relative;
+      bottom: 2vw;
     }
-
-    .sub-pricing{
-    position: relative;
-    left: 70%;
-    float: right;
-    font-size: 1.2vw;
+    .total-tax{
+      display: flex;
+      flex-direction: column;
     }
 
     .total-price{
-      position: relative;
-      left: 75%;
-      font-size: 1.2vw;
-      padding-top: 0.5vw;
+      font-size: 1.5em;
       }
 
-    .shipping-price{
-    position: relative;
-    left: 55%;
-    font-size: 1vw;
+    .shipping-price,.sub-pricing{
+    font-size: 1em;
     font-weight: bold;
     }
 
     .total{
-      font-size: 1.5vw;
+      font-size: 1.2em;
     }
 
     .coupon{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
       bottom: 8%;
-      display: inline;
     }
 
     .coupon-input{
@@ -402,22 +413,20 @@ body{
       height: 3vw;
       padding-left: 1%;
       font-size: 1.2vw;
+      padding-right: 2%;
       }
 
   .coupon-arrow{
     height: 2vw;
-    text-align: center;
-    
-  }
-
-  .coupon-button{
     border: 1px solid #EFB784;
     border-radius: 4px;
     background-color: #F9C290;
-    width: 3.1vw;
-    height: 3.1vw;
-    position: relative;
-    top: 0.5vw;
+   padding: 20%;
+  }
+
+  .coupon-button{
+    border: none;
+    background-color: none;
   }
 
   .return{
@@ -566,18 +575,163 @@ body{
   padding: 0%;
 }
 
-.shipping-button{
-  position: relative;
-  top: 2vw;
-  left: 4vw;
-}
+  /* Works for Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-   /* Works for Chrome, Safari, Edge, Opera */
-   input::-webkit-outer-spin-button,
-   input::-webkit-inner-spin-button {
-     -webkit-appearance: none;
-     margin: 0;
-   }
+   @media only screen and (max-width : 800px)
+  {
+    
+    body{
+      overflow-x: hidden;
+    }
+
+    .column-form, .main-checkout{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;  
+      }
+
+
+    .payment-content{
+      position: relative;
+      bottom: 4vw;
+      width: 100vw;
+    }
+
+    .order-items{
+      left: 6%;
+      width: 80%;
+      height: 15vw;
+    }
+
+    .c-items{
+      position: relative;
+      bottom: 4vw;
+      order: 1;
+      display: none;
+    }
+
+    .form1{
+      padding-bottom: 10%;
+    }
+
+    .tot, .coupon,.ship, .gift-card, .taxes{
+      position: relative;
+      left: 8%;
+      font-size: 1em;
+      width:80% ;
+      }    
+      .subtot,.return, .order-footer{
+      display: none;
+      }
+
+      .ship{
+      font-size: 0.8em;
+      height: 2px;
+      }
+
+      .total-tax{
+      padding-top: 35px;
+      }
+      .taxes{
+      font-size: 0.8em;
+      }
+
+      .order-dropdown{
+      position: relative;
+      bottom: 3vw;
+      background-color: #F5F5F5;
+      border: 1px solid #D9D9D9;
+      width: 90%;
+      display: flex;
+    }
+    .order-dropdown:hover{
+      cursor: pointer;
+    }
+    .order-arrow{
+      height: 6vw;
+      visibility: visible;
+    }
+    .order-arrow.rotate{ /*add order summar arrow to this after merge*/
+      transform: rotate(180deg);
+    }
+
+    .coupon-input{
+      border: 1px solid #B2BCCA;
+      border-radius: 4px;
+      width: 35vw;
+      height: 8vw;
+      padding-left: 1%;
+      font-size: 0.8em;
+      }
+  
+    .coupon-arrow{
+      height: 5vw;
+    }
+
+    .login, .sign-up, .continue{
+      width: 40vw;
+    }
+
+    .input-row{
+      width: 90vw;
+    }
+
+    .form-inputbox input, .dropdown{   
+      height: 25px;
+      width: 100%;
+     }  
+
+     input.text-box{   
+      height: 25px;
+      width: 75%;
+     }  
+
+     .cvcnum{
+      position: relative;
+      right: 12%;
+     }
+
+     .payment-form, .past-info{
+      width: 70vw ;
+     }
+
+     .form-body{
+      padding-top:5% ;
+     }
+
+     .order-content{
+      width: 69vw;
+     }
+  
+     .order-name{
+      padding-top: 2%;
+      font-size: 1em;
+      width: 100vw;
+     }
+  
+     .order-author{
+      font-size:0.8em ;
+     }
+  
+     .order-price{
+      position: relative;
+      text-align: right;
+     }
+
+     .formname-bg{
+      padding-top: 5%;
+     }
+
+     .paypal{
+      height: 6vh;
+     }
+  }
 
 
 
