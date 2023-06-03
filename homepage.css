@@ -1,0 +1,687 @@
+/*lihini start*/
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Sans+Thai&family=IBM+Plex+Serif&family=Josefin+Sans&display=swap');
+
+  body{
+    font-family: 'IBM Plex Serif', serif;
+    border: none;
+    margin: 0px;
+    position: relative;
+    box-sizing: border-box;
+
+  }
+
+  .header-bar{
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #DFBD65;
+    background-color: #1B605D;
+    display: flexbox;
+    height: 8vw;
+    z-index: 9;
+  }
+
+  .topnav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 6vw;
+    left: 3vw;
+  }
+
+  .bookshop{
+    font-size: 3vw;
+    margin-top: 2%;
+    color: #DFBD65;
+    font-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .book-1-search .single-link {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;  
+  }
+
+  .free-shipping{
+    background-color: #A1483D;
+    color: #ffffff;
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+    display: flex;
+  }
+  .free-shipping p{
+    display: flex;
+    position: relative;
+    right: 5%;
+  }
+
+  .content-free{
+    font-size: 0.8em;
+    text-align: center;
+    align-items: center;
+    padding-left: 50%;
+    }
+
+  .free-truck{
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+
+  .logo{
+    width: 20%;
+    height: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .logo-content{
+    display: flex;
+    width: 46vw;
+    position: relative;
+    top: 5%;
+  }
+
+  .menubutton, .cartbutton{
+    border: none;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#D9D9D9;
+  }
+
+  .menubutton{
+  position: relative;
+  right: 25%;  
+}
+
+  .menu{
+    display: flex;
+    padding-left: 15vw;
+  }
+
+  .menubutton:hover, .cartbutton:hover, .search-icon:hover{
+    cursor: pointer;
+  }
+
+  .genere-bar{
+    width: 100%;
+    display: flex;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 0.99em;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .figimg{
+    height: 3vw;
+  }
+
+  .figure{
+    display: flex;
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+  }
+
+  .grid-product-image{
+    width: 50%;
+  }
+
+  .product-grid{
+    display: flex;
+    margin-left: 3vw;
+    margin-right: 2vw;
+  }
+  .view-all{
+    display:grid;
+    color: #A1483D;
+  }
+
+  .view-full-catalogue, .add-to-cart, .view-cart{
+    background-color: #F87E60;
+    color: #ffffff;
+    padding: 0.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family:'IBM Plex Serif', serif;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    }
+
+    .catalogue-button{
+    text-align: center;
+    }
+
+    .rec-header{
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    }
+
+    .view-all{
+    padding: 2%;
+    cursor: pointer;
+    }
+
+    .product-grid{
+    text-align: center;
+    font-size: 1vw;
+    }
+
+  .product{
+  background-color: #ffffff;
+  padding-top: 2vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+  .carousel-1{
+  text-align: center;
+  padding-top: 5vw;
+
+  }
+
+    .caro-img{
+    width:40vw;
+    }
+
+    .banner-img{
+    width: 100%; 
+    }
+
+  .input-box-search {
+    padding-left: 70%;
+
+  }
+  .search-drop{
+    display: none;
+  }
+  .search
+  {
+    border: none;
+    overflow: auto;
+    border-radius: 50px;
+    font-family:'IBM Plex Serif', serif;
+    padding-left: 5px;
+    height: 2.4vw;
+    width: 18vw;
+  }
+
+  .search-icon{
+    border: none;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#D9D9D9;
+    position: relative;
+    right: 2.5vw;
+  }
+
+  .search-img, .menu-img, .cart-img{
+    width: 2vw;
+  }
+
+  .notif{
+      display: flex;
+      background-color: #A1483D;
+      color: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      align-items: center;
+      text-align: center;
+      font-size: 0.8em;
+      position: relative;
+      right: 10%;
+      top: 50%;
+      font-family: 'IBM Plex Serif';
+      display: none;
+      }
+  
+
+  .search-bar{
+    padding-left: 50vw;
+    display: flex;
+  }
+
+
+  .search-items{
+  background-color: #ffffff;
+  border: 5px solid;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 10px;
+  }
+
+
+  /*drop down search */ 
+
+
+  .search-drop{
+    background-color: #F5F5F5;
+    color: #F5F5F5;
+    font-family: 'IBM Plex Serif', serif;
+    display: flex;
+    position: relative;
+    right: 40%;
+    top: 3vw;
+    z-index: 10;
+    display:none;
+  }
+  .search-items{
+    width: 20vw;
+    background-color: #F5F5F5;
+  }
+
+  .book-1-search{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .searchimg{
+    width: 5vw;
+    position: relative;
+    top: 0.8vw;
+  }
+
+  .searchcontent{
+    display: inline-block; 
+    color: #000000; 
+    padding-left: 18%; 
+    position: relative;
+    bottom: 1vw;
+  }
+
+  .search-price, .search-discount, .dicsount-price, .product-price{
+    display: inline;
+    position: relative;
+    bottom: 0.5vw;
+  }
+
+  .author-text, .author-name{
+    display: inline;
+  }
+
+  .search-title{
+    font-weight: 400;
+    font-size: large;
+    margin-bottom: -15%;
+    font-size: 1.5em;
+  }
+
+  .search-author{
+    font-size: medium;
+    font-weight: 400;
+    margin-bottom: -15%;
+    font-size: 1em;
+    min-width: 0.5vw;
+  }
+
+  .bestseller-search{
+    margin-top: 15%;
+    font-size: 0.8em;
+  }
+
+  .search-price{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .search-discount{
+    font-size: 1em;
+    text-decoration: line-through;
+  }
+
+  .author-rec{
+    font-weight: 400;
+    font-size: large;
+    font-size: 1em;
+    color: #000000;
+  }
+
+  /*search end*/
+
+  /*side menu start*/
+  .drop-down-menu{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #F5F5F5;  
+    z-index: 9;
+    color: #000000;
+    position: absolute;
+    left: 80%;
+    display: none;
+  
+}
+
+.subjects, .menu-title{
+    padding-left: 4%;
+    font-size: 1.2em;
+}
+
+.subjects{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 1%;
+}
+.small{
+    font-size: 1em;
+}
+
+.menu-title{
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+.sub-menu{
+    background-color: #1B605D;
+    color: #F5F5F5;
+    padding-left: 4%;
+    padding-top: 4%;
+}
+
+.copyright{
+    font-size: 0.5em;
+    text-align: center;
+    padding-bottom: 2%;
+}
+  
+.menu-arrow, .cross-black{
+    width: 2vw;
+    height: 2vw;
+    padding-right: 2%;
+}
+
+.main-menu{
+    padding-bottom: 4%;
+}
+.menu-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-arrow{
+    width: 1.5vw;
+    height: 1.5vw;
+    padding-right: 4%;
+}
+
+.cross-black{
+    position: relative;
+    top: 0.3vw;
+
+}
+
+.sub-content{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+  /*start menu end*/
+
+  /* ===========================
+    ====== Medua Query for Search Box ====== 
+    =========================== */
+
+  @media only screen and (max-width : 800px)
+  {
+
+  
+    .topnav{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      bottom: 80%;
+    }
+
+    .header-bar{
+      height: 12vw;
+      width: 100%;
+    }
+
+    .search-bar{
+        padding-left: 10%;
+        position: relative;
+    }
+
+    .bookshop{
+      display: none;
+    }
+
+    .free-truck{
+      width: 4vw;
+      height: 4vw;
+    }
+
+    .free-shipping p{
+      right: 15%;
+    }
+
+    .logo-content{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo{
+      width: 15%;
+      height: 88%;
+    }
+
+    .search {
+      height: 6.7vw;
+      width: 32vw;
+      margin: 0 auto;
+      font-size: 1em;
+      position: relative;
+      top: %;
+      left: 10%;
+    }
+
+    .hide{
+      display: none;
+    }
+
+    .search-icon{ 
+      height: 2vw;
+      width: 2vw;
+      padding: 10%;
+      border-radius: 50%;
+      position: relative;
+      right: 3vw;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .input-box-search {
+      padding-left: 70%;
+  
+    }
+
+    .search-img, .menu-img, .cart-img{
+      width: 5vw;
+    }
+
+    .menu{
+      display: flex;
+      padding-left: 32vw;
+      padding-top: 0.2%;
+    }
+
+    .menubutton, .cartbutton{
+    height: 7vw;
+    width: 7vw;
+    }
+
+  }
+
+  /*pop up cart*/
+.popup-cart{
+    display: absolute;
+    z-index: 9; /* Ensures the div appears above other content */
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    display: none;
+    }
+    .pop-cart{
+    display: relative;
+    background-color: white;
+    box-shadow:-10px 0px 10px  #6F6F6F;
+    height: 84vh;
+    width: 25vw;
+    }
+    
+    .pop-ship{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    background-color: #A1483D;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;}
+    
+    .popup-shipping{
+    padding-left: 2%;
+    }
+    
+    .remove, .qty{
+    font-size: 0.8em;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    }
+    .remove{
+    color:#A1483D ;
+    }
+    
+    .popcart-item{
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    }
+    
+    .bg{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 8vw;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    display: none;
+    }
+    
+    .cart-bottom{
+      padding-top: 50%;
+      padding-bottom: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .searchdiv-bottom{
+      position: relative;
+      top: 22vw;
+    }
+    
+    
+    
+    .view-cart{
+    width: 60%;
+    }
+    
+    .link-home{
+    display: inline-block;
+    }
+    
+     /* Works for Chrome, Safari, Edge, Opera */
+     input::-webkit-outer-spin-button,
+     input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+     }
+    
+    @media only screen and (max-width : 800px)
+      {
+        
+        body{
+          overflow-x: hidden;
+        }
+        .pop-cart{
+          width: 100%;
+          height: 150vw;
+        }
+      .pop-img{
+        padding-top: 20px;
+      }
+      .searchimg{
+        min-width: 80px;
+      }
+    
+      .searchcontent{
+        font-size: 1em;
+        padding-left: 20%;
+        bottom: 3vw;
+      }
+    
+      .search-price, .search-discount, .dicsount-price, .product-price{
+        display: inline;
+        position: relative;
+        bottom: 1vw;
+      }
+    
+      .bg{
+        top: 12vw;
+      }
+    
+      .drop-down-menu{
+        width: 70%;
+        left: 30%;
+      }
+    
+      .search-items{
+        width: 280px; 
+      }
+      .search-drop{
+        right: 70vw;
+        top: 8vw;
+      }
+      
+      .recom-grid{
+        width: 200vw ;
+        height: 40vw;
+        padding-bottom: 5%;
+        padding-left: 1%;
+       
+      }
+    
+      .main-series-grid{
+        background-color: #1B605D;
+        height: 40vw;
+        width: 90vw;
+      }
+    
+         
+      }
+
+  /*lihini end*/
