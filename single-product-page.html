@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="homepage.css">
-    <script src="Homepage.js"></script>
+    <link rel="stylesheet" href="homepagestylesheet.css">
+    <script src="homepage.js"></script>
 
 </head>
 <body>
@@ -25,9 +25,7 @@
                          <div class="input-box-search">
                                 <input type="text" class="search" placeholder="Search" id="search" oninput="searchBar()"> <!--dropdownsearch-->
                         </div>
-                        <div class="search-button">
-                                 <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
-                        </div>
+                                 <button class="search-icon" id="search-button"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
                     </div>
                     <div class="menu">
                         <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
@@ -37,7 +35,7 @@
                     <div class="search-drop" id="searchDrop">
                         <div class="search-items">
                             <div class="book-1-search">
-                                <a href="single-product-page.html">  
+                                <a href="single-product-page.html" class="single-link">  
                                     <div class="search-img">
                                         <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
                                     </div>
@@ -49,8 +47,8 @@
                                         <p class="search-discount">discount</p>
                                     </div>
                                 </a>
-                                <hr class="searchdiv">
                             </div>
+                            <hr class="searchdiv">
                             <div class="book-1-search">
                                 <div class="search-img">
                                     <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
@@ -62,8 +60,8 @@
                                     <p class="search-price"> Price</p>
                                     <p class="search-discount">discount</p>
                                 </div>
-                                <hr class="searchdiv">
                             </div>
+                            <hr class="searchdiv">
                             <div class="book-1-search">
                                 <div class="search-img">
                                     <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
@@ -75,8 +73,8 @@
                                     <p class="search-price"> Price</p>
                                     <p class="search-discount">discount</p>
                                 </div>
-                                <hr class="searchdiv">
                             </div>
+                            <hr class="searchdiv">
                             <div class="book-1-search">
                                 <div class="author-rec">
                                     <p class="author-text"> View more books by</p>
@@ -183,9 +181,9 @@
                   Add <b> $63.41 </b> of items to be eligible for <b> free shipping </b>                         </p>
           </div>
           <div class="book-1-search  popcart-item"> 
-            <a href="single-product-page.html">  
+            <a href="single-product-page.html" class="single-link">  
                 <div class="search-img">
-                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg pop-img">
                 </div>
                 <div class="searchcontent">
                     <p class="search-title">Book Title</p>
@@ -197,6 +195,8 @@
                     <p class="remove">X Remove</p>
                 </div>
             </a>
+            </div>    
+            
             <hr class="searchdiv">
 
             <hr class="searchdiv-bottom">
@@ -206,7 +206,7 @@
               <p>*Shipping and taxes calculated at checkout</p>
               <button class="view-cart">View Cart</button>
             </div>
-        </div>
+        
           </div>
         </div>
         <div class="bg" id="bg"></div>
@@ -254,8 +254,9 @@
                     <img src="A3/search-icon.png" alt="search-icon" class="postcode-search-img">
                 </div>
             </div>
-            
+                <div class="button-location">
             <button class="add-to-cart" id="addCart" onclick="addedCart()"> Add to Cart </button>
+        </div>
 
             <div class="product-details">
                 <div class="detail"  onclick="descripDrop()">
