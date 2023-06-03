@@ -97,8 +97,15 @@ function addedCart(){
     addedToCart.innerText ="Add to Cart"
     addedToCart.style.backgroundColor="#A1483D"
 }, 2000);
+}
 
-
+function rightScroll() {
+  const left = document.querySelector(".scroll-images");
+  left.scrollBy(200, 0);
+}
+function leftScroll() {
+  const right = document.querySelector(".scroll-images");
+  right.scrollBy(-200, 0);
 }
 
 //lihini end

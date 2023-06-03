@@ -223,8 +223,11 @@
         <img src="A3/Screenshot 2023-04-21 161942.png" alt="" class="banner-img"> <!--temp image-->
     </div>
 
-   <section class="genere-bar">
-        <i class="arrow left"></i> <!--add css to create arrows or replace with images-->
+    <section class="genere-bar">
+        <button class="genre-left" onclick="leftScroll()">
+            <img src="A3/genre-leftarrow.png" alt="genre-leftarrow">
+        </button>
+        <div class="scroll-images">
         <figure>
             <img src="A3/bestsellers.png" alt="bestseller" class="figimg bestsell">
             <figcaption>Bestsellers</figcaption>
@@ -265,8 +268,11 @@
             <img src="A3/cookbook.png" alt="cookbook"  class="figimg cookbook">
             <figcaption>Cookbook</figcaption>
         </figure>
-        <i class="arrow right"></i>
-    </section>    
+        </div>
+        <button class="genre-right" onclick="rightScroll()">
+            <img src="A3/genre-rightarrow.png" alt="genre-rightarrow" >
+        </button>    
+    </section>     
 
     <div class="rec-header">
         <h2 class="book-recs">New Releases</h2>
