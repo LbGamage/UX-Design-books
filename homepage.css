@@ -359,6 +359,7 @@
     margin-bottom: -15%;
     font-size: 1em;
     min-width: 0.5vw;
+    padding-top: 5%;
   }
 
   .bestseller-search{
@@ -496,6 +497,7 @@
     .free-truck{
       width: 4vw;
       height: 4vw;
+      padding-left: 5%;
     }
 
     .free-shipping p{
@@ -656,6 +658,18 @@
     
     .link-home{
     display: inline-block;
+    }
+
+    .subtotal{
+      display: flex;
+      justify-content:space-between;
+      width: 95%;
+    }
+
+    .ship-info{
+      padding-top: 5%;
+      width: 95%;
+      text-align: right;
     }
     
      /* Works for Chrome, Safari, Edge, Opera */
@@ -1302,7 +1316,7 @@ font-size: 2em;
     height: 4vw;
   }
 
-  .taxes{
+  .taxes, .ship-info{
     font-weight: lighter;
     font-size: 0.5em;
     color: #6f6f6f;
