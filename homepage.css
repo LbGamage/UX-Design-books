@@ -936,6 +936,11 @@ font-size: 2em;
 .navigation{
   display: flex;
   font-size: small;
+  align-items: center;
+}
+
+.nav-arrow{
+  height: 1vw;
 }
 
 .past, .nav-location, .future{
@@ -1636,6 +1641,11 @@ input::-webkit-inner-spin-button {
    .shop-location{
     padding-left: 16%;
    }
+
+   .nav-arrow{
+    height: 2vw;
+  }
+  
 
 }
 
