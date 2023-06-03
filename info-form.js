@@ -17,7 +17,7 @@ form.addEventListener('submit', e => {
 
   if (validateInputs()) {
     //submit once all inputs are true
-    form.submit();
+    window.location.href="Shipping-form.html"
   }})
 
   //form validation function 
@@ -147,5 +147,6 @@ function orderSummary(){
     orderArrow.classList.remove('rotate');
   }
 };
+
 //Lihini End
 

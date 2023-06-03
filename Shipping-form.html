@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping Form</title>
     <link rel="stylesheet" href="homepage.css">
-
+    <script src="info-form.js"></script>
 </head>
 <body>
     <div class="header-bar">
@@ -146,7 +146,6 @@
                         <label class="form-names">Store Location</label>
                         </div>
                         <select id="store" name="store" class="dropdown store">
-                            <option value="--"> </option>
                             <option value="Frankston">Frankston</option>
                             <option value="Fountain Gate">Fountain Gate</option>
                             <option value="NT">NT</option>
@@ -154,11 +153,12 @@
                           </select>
                     </div>
                     </div>
-                    
-                    <div class="input-row continue-button">
-                        <button type="submit" class="continue" id="ship-button"> Continue to Payment</button>
-                    </div>
                 </form>
+                <div class="input-row continue-button">
+                    <a href="payment-form.html" class="pay">
+                    <button class="continue" id="ship-button"> Continue to Payment</button>
+                    </a>
+                </div>
             </div>   
         </div>
     
