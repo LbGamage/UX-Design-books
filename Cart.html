@@ -6,34 +6,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="homepage.css">
-    <script src="mutliProduct.js"></script>
+    <script src="Homepage.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header-bar">
-            <div class="logo-content">
+            <a href="index.html" class="home-link">
+            <div class="logo-content" i> <!--a is a bit flaky so try to link it via js-->
                 <img src="A3/Logo.png" alt="Logo" class="logo">
                 <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
             </div>
+            </a>
+            
 
             <div class="topnav">
                 <div class="search-bar">
                      <div class="input-box-search">
-                            <input type="text" name="search" class="search" placeholder="Search" onclick=" "> <!--dropdownsearch-->
+                            <input type="text" class="search" placeholder="Search" id="search" oninput="searchBar()"> <!--dropdownsearch-->
                     </div>
-                     <div class="search-button">
-                             <button class="search-icon" id="go"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
-                     </div>
+                             <button class="search-icon" id="search-button"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
                 </div>
                 <div class="menu">
-                <button class="menubutton" onclick=""> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
-
-                <button class="cartbutton"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img"></button>
+                    <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
+                    <button class="cartbutton" onclick="openCart()"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img" ></button>
+                    <div id="cartNotif" class="notif">1</div>
+                </div>
+                <div class="search-drop" id="searchDrop">
+                    <div class="search-items">
+                        <div class="book-search">
+                            <a href="single-product-page.html" class="single-link">  
+                                <div class="search-img">
+                                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                                </div>
+                                <div class="searchcontent">
+                                    <p class="search-title">Book Title</p>
+                                    <p class="search-author">Author</p>
+                                    <p class="bestseller-search">#1 Bestseller</p>
+                                    <p class="search-price"> Price</p>
+                                    <p class="search-discount">discount</p>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="searchdiv">
+                        <div class="book-search">
+                            <div class="search-img">
+                                <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                            </div>
+                            <div class="searchcontent">
+                                <p class="search-title">Book Title</p>
+                                <p class="search-author">Author</p>
+                                <p class="bestseller-search">#1 Bestseller</p>
+                                <p class="search-price"> Price</p>
+                                <p class="search-discount">discount</p>
+                            </div>
+                        </div>
+                        <hr class="searchdiv">
+                        <div class="book-search">
+                            <div class="search-img">
+                                <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
+                            </div>
+                            <div class="searchcontent">
+                                <p class="search-title">Book Title</p>
+                                <p class="search-author">Author</p>
+                                <p class="bestseller-search">#1 Bestseller</p>
+                                <p class="search-price"> Price</p>
+                                <p class="search-discount">discount</p>
+                            </div>
+                        </div>
+                        <hr class="searchdiv">
+                        <div class="book-search">
+                            <div class="author-rec">
+                                <p class="author-text"> View more books by</p>
+                                <p class="author-name"><b>Holly Black</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                          
-        </div>      
+            
+        </div>
     </header>
+
+    <div class="drop-down-menu" id="menuDrop">
+        <div class="menu-content menu-header">
+          <h4 class="menu-title">Menu</h4>
+          <img src="a3/cross-black.png" alt="cross-black" class="cross-black" id="closeMenu"> 
+        </div>
+
+          <div class="main-menu">
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Books</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Kids</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Sale</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Games & Toys</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+              <hr>
+              <div class="menu-content">
+                <p class="subjects">Gifts, Stationery & More</p> 
+                <img src="A3/right-arrow.png" alt="right-arrow" class="menu-arrow">
+              </div>
+          </div>
+
+          <div class="sub-menu">
+            <div class="menu-content sub-content">
+              <p class="subjects small">Events</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Book Club</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Blog</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Cafe</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+             
+            <div class="menu-content sub-content">
+              <p class="subjects small">Membership</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="sub-arrow">
+            </div>
+              
+            <div class="menu-content sub-content">
+              <p class="subjects small">Locations</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+            </div>
+             
+            <div class="menu-content sub-content">
+              <p class="subjects small">Contact Us</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+            </div>
+             
+            <div class="menu-content sub-content">
+              <p class="subjects small">About Us</p> 
+              <img src="A3/right-arrow-white.png" alt="right-arrow-white" class="menu-arrow sub-arrow">
+            </div>
+          
+          <div class="copyright">
+              <p> Copyright 2000-2021 | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="popup-cart" id="sideBar">
+      <div class="pop-cart">
+        <div class="menu-content menu-header">
+          <h4 class="menu-title">My Shopping Cart</h4>
+          <img src="a3/cross-black.png" alt="cross-black" class="cross-black" id="closeMenu"> 
+        </div>
+        <div class="pop-ship">
+          <img src="A3/carbon_delivery-truck.png" alt="carbon_delivery-truck" class="free-truck">
+          <p class="popup-shipping">
+              Add <b> $63.41 </b> of items to be eligible for <b> free shipping </b>                         </p>
+      </div>
+      <div class="book-search  popcart-item"> 
+        <a href="single-product-page.html" class="single-link">  
+            <div class="search-img">
+                <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg pop-img">
+            </div>
+            <div class="searchcontent">
+                <p class="search-title">Book Title</p>
+                <p class="search-author">Author</p>
+                <p class="bestseller-search">#1 Bestseller</p>
+                <p class="search-price"> Price</p>
+                <p class="search-discount">discount</p>
+                <p class="qty">Qty: 1</p>
+                <p class="remove">X Remove</p>
+            </div>
+        </a>
+        </div>    
+        
+        <hr class="searchdiv">
+
+        <hr class="searchdiv-bottom">
+        <div class="cart-bottom">
+          <span>Sub Total</span>
+          <span>$11.69</span>
+          <p>*Shipping and taxes calculated at checkout</p>
+          <button class="view-cart">View Cart</button>
+        </div>
+    
+      </div>
+    </div>
+    <div class="bg" id="bg"></div>
+
+<div class="free-shipping">
+    <p class="content-free"  >
+        <img src="A3/carbon_delivery-truck.png" alt="carbon_delivery-truck" class="free-truck">
+        Free Shipping over $75
+    </p>
+</div>
+
+<div class="navigation">
+    <p class="nav-past">Home</p>
+    <img src="A3/right-arrow-grey.png" alt="right-arrow-grey" class="nav-arrow">                  
+    <p class="nav-location">My Cart</p>
+</div>
 
 <div style="clear:both";></div>
     <!--end header, start page content-->
