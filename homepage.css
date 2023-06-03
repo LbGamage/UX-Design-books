@@ -1144,26 +1144,6 @@ ul {list-style-type: none;}
     margin: 5px 0;
   }
 
-
-
-a{
-    background-color: #A1483D;
-    color: #ffffff;
-    padding: 0.8%;
-    padding-left: 3%;
-    padding-right: 3%;
-    font-family:'IBM Plex Serif', serif;
-    border: 0;
-    display: inline-block;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 1.rem;
-    cursor: pointer;
-    height: 25px;
-    width: 150px;
-  
-}
-
 .squares{
   float: right;
   display: inline-block;
