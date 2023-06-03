@@ -374,6 +374,7 @@
   .search-discount{
     font-size: 1em;
     text-decoration: line-through;
+    color: #A1483D;
   }
 
   .author-rec{
