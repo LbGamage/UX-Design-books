@@ -748,8 +748,6 @@
   padding-top: 3%;
 }
 
-
-
 .column{
   float: left;
   width: 50%;
@@ -919,13 +917,13 @@ font-size: 2em;
 }
 
 /*form css*/
-/*add this to main css file later since some of the classes are simillar*/
-
-/*delete whene merge*/ @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Sans+Thai&family=IBM+Plex+Serif&family=Josefin+Sans&display=swap');
-
-       /*to here*/
-  
-       .column-form{
+ 
+       .main-checkout{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+      }
+      .column-form{
         width: 50%;
         min-height: 66vw;
         flex: 1;
@@ -1624,10 +1622,6 @@ font-size: 2em;
          }
       }
     
-  
-  
-  
-  
 /*form end*/
   /*lihini end*/
 
@@ -1878,7 +1872,7 @@ ul {list-style-type: none;}
     margin-bottom: 30px;
     
   }
-  button{
+  .membership{
     background-color: #F87E60;
     color: #ffffff;
     padding: 0.8%;
