@@ -685,3 +685,343 @@
       }
 
   /*lihini end*/
+
+
+  /*SAM START*/
+  /*SAM START 7:52pm 11/05/23*/
+ul {list-style-type: none;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  color: black;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: transparent;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background: transparent;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #000000;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  margin: 0;
+  background: transparent;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #000000;
+  background: transparent;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #F87E60;
+  color: white !important
+}
+.container {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .left {
+    width: 40%;
+  }
+.bannerCalendar {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .Dates {
+    width: 40%;
+  }
+  
+  .banner {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mothersDay { /*lihini: I specified this class cause it was causing issues throughout the page*/
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+/*Sam Start*/
+.tile{
+    height: 100px;
+    width: 50px;
+    text-align: center;
+}
+
+.h1{
+    align-content: center;
+    text-align: center;
+}
+
+.headContainer{
+  display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lefth {
+  width: 15%;
+  margin-right: 20px;
+  
+}
+
+
+
+.righth {
+  width: 175%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.container {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    width: 15%;
+    margin-right: 20px;
+    
+  }
+
+
+
+  .right {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /*Product Grid CSS*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .under-10 {
+    display: flex;
+    align-items: right;
+}
+
+  .square{
+    margin-left: 5px;
+  }
+
+  
+  .book {
+    flex: 0 0 20%; /* Specify a fixed width of 20% for each book */
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  
+  .book img {
+    max-width: 50%; /* Remove the max-width property to allow the image to scale within the book element */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .book h4,
+  .book h6,
+  .book span {
+    margin: 5px 0;
+  }
+
+
+
+a{
+    background-color: #A1483D;
+    color: #ffffff;
+    padding: 0.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family:'IBM Plex Serif', serif;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.rem;
+    cursor: pointer;
+    height: 25px;
+    width: 150px;
+  
+}
+
+.squares{
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  bottom: 1.1vw;
+}
+
+
+  .rectangle {
+    background-color: #1B605D; 
+    height: 100px; /* Set the height of the rectangle */
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+  }
+  button{
+    background-color: #F87E60;
+    color: #ffffff;
+    padding: 0.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family:'IBM Plex Serif', serif;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+   }
+
+   .row {
+    width: 100%;
+
+   }
+
+   .footer{
+    background-color: #2f2f2f;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    
+   }
+
+.Column1{
+    width: 33.33%;
+    display: table;
+    float: left;
+    align-content: left;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.Column2{
+  width: 33.33%;
+  display: table;
+  float: left;
+  align-content: center;
+  text-align: center;
+}
+
+.Column3{
+  width: 33.33%;
+  display: table;
+  float: left;
+  align-content: center;
+  text-align: center;
+}
+
+.footerButton{
+  border: none;
+  vertical-align: top;
+  border-radius: 25px;
+  background: #b7b7b7;
+  font-size:small;
+  padding: 20px;
+  width: 300px;
+  height: 8px;
+  position: relative;
+  left: 20%;
+  right: 100%;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+  /*SAM END*/
