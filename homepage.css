@@ -2138,8 +2138,8 @@ ul {list-style-type: none;}
   background-color: #2f2f2f;
   display: flex;
   justify-content: center;
- align-items: center;
- margin-top: auto;
+  align-items: center;
+   margin-top: auto;
   bottom: 0%;
   left: 0%;
   width: 100%;
@@ -2206,7 +2206,9 @@ color: rgba(0, 0, 0, 0.6)
     }
 
     .footer{
-        padding-bottom: 50px;
+        padding-bottom: 100px;
+        position: relative;
+        bottom: 0;
     }
 
     .footer-text{
@@ -2227,7 +2229,7 @@ color: rgba(0, 0, 0, 0.6)
      }
   
      .footer{
-    position: relative;
+      position: relative;
       bottom: 0;
       width: 100%;
       color: white;
@@ -2249,6 +2251,8 @@ color: rgba(0, 0, 0, 0.6)
       padding: 20px;
       width: 300px;
     }
+
+    
   }
   /*lihini end*/
 
