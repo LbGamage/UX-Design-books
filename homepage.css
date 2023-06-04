@@ -296,7 +296,7 @@
       align-items: center;
       text-align: center;
       font-size: 0.8em;
-      position: relative;
+      position: absolute;
       right: 10%;
       top: 50%;
       font-family: 'IBM Plex Serif';
