@@ -1982,7 +1982,6 @@ ul {list-style-type: none;}
     left: 0%;
     width: 100%;
     color: white;
-    justify-content: center;
     padding-top: 3%;
    }
 
@@ -1998,27 +1997,25 @@ ul {list-style-type: none;}
   justify-content: center;
 }
 
-.column2{
-  width: 33.33%;
-  display: table;
-  float: left;
-  align-content: center;
-  text-align: center;
+.footer-column.column2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 .footer-text{
-  padding-left: 15%;
+  padding-left: 12%;
 }
 
-.footerButton{
+.footer-button{
   border: none;
   vertical-align: top;
-  border-radius: 25px;
+  border-radius: 50px;
   background: #b7b7b7;
   font-size:small;
-  padding: 20px;
-  width: 300px;
+  padding: 1.5vw;
+  width: 20vw;
   height: 8px;
   position: relative;
   left: 20%;
@@ -2154,6 +2151,14 @@ ul {list-style-type: none;}
       padding-bottom: 50%;
     }
 
+    .footer-text{
+      padding-left: 0%;
+    }
+
+    .footer-column.column2{
+      padding-bottom: 0%;
+    }
+
     .footer-row {
       width: 98%;
       display: flex;
@@ -2172,6 +2177,19 @@ ul {list-style-type: none;}
   
     .footer-column{
      padding-bottom: 3%;
+    }
+
+    .footer-form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      bottom: 15%;
+    }
+    .footer-button{
+      left: 0%;
+      padding: 20px;
+      width: 300px;
     }
   }
   /*lihini end*/
