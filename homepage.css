@@ -1435,8 +1435,11 @@ font-size: 2em;
   align-self: flex-end;
   bottom: 10px;
   width: 100%;
-  justify-content: center;
 }
+
+ .order-footer{
+  width: 100%;
+ }
 
 .foot-divider{
 width: 45vw;
