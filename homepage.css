@@ -1451,7 +1451,7 @@ color: #6F6F6F;
 
 .return, .order-footer, .foot-divider{
 position: relative;
-top: 13vw;
+top: 18vw;
 float: bottom;
 }
 
@@ -1654,7 +1654,7 @@ input::-webkit-inner-spin-button {
 
     .order-dropdown{
     position: relative;
-    bottom: 3vw;
+    bottom: 2vw;
     background-color: #F5F5F5;
     border: 1px solid #D9D9D9;
     width: 90%;
