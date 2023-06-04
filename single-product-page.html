@@ -11,83 +11,84 @@
 </head>
 <body>
     <header>
-            <div class="header-bar">
-                <a href="index.html" class="home-link">
-                <div class="logo-content" >  <!--logo and header text container-->
-                    <img src="A3/Logo.png" alt="Logo" class="logo">
-                    <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
-                </div>
-                </a>
-                
-    
-                <div class="topnav">
-                    <div class="search-bar">
-                         <div class="input-box-search">
-                                <input type="text" class="search" placeholder="Search" id="search" oninput="searchBar()"> <!--dropdownsearch-->
-                        </div>
-                                 <button class="search-icon" id="search-button"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
-                    </div>
-                    <div class="menu">
-                        <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--button for opening menu-->
-                        <button class="cartbutton" onclick="openCart()"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img" ></button> <!--button for opening pop-up cart-->
-                        <div id="cartNotif" class="notif">1</div>
-                    </div>
-                    <!--drop down search-->
-                    <div class="search-drop" id="searchDrop">
-                        <div class="search-items">
-                            <div class="book-search">
-                                <a href="single-product-page.html" class="single-link">  
-                                    <div class="search-img">
-                                        <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                    </div>
-                                    <div class="searchcontent">
-                                        <p class="search-title">Book Title</p>
-                                        <p class="search-author">Author</p>
-                                        <p class="bestseller-search">#1 Bestseller</p>
-                                        <p class="search-price"> Price</p>
-                                        <p class="search-discount">discount</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <hr class="searchdiv">
-                            <div class="book-search">
-                                <div class="search-img">
-                                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                </div>
-                                <div class="searchcontent">
-                                    <p class="search-title">Book Title</p>
-                                    <p class="search-author">Author</p>
-                                    <p class="bestseller-search">#1 Bestseller</p>
-                                    <p class="search-price"> Price</p>
-                                    <p class="search-discount">discount</p>
-                                </div>
-                            </div>
-                            <hr class="searchdiv">
-                            <div class="book-search">
-                                <div class="search-img">
-                                    <img src="A3/modern-fae.jpg" alt="anastasiia-chepinska" class="searchimg">
-                                </div>
-                                <div class="searchcontent">
-                                    <p class="search-title">Book Title</p>
-                                    <p class="search-author">Author</p>
-                                    <p class="bestseller-search">#1 Bestseller</p>
-                                    <p class="search-price"> Price</p>
-                                    <p class="search-discount">discount</p>
-                                </div>
-                            </div>
-                            <hr class="searchdiv">
-                            <div class="book-search">
-                                <div class="author-rec">
-                                    <p class="author-text"> View more books by</p>
-                                    <p class="author-name"><b>Holly Black</b></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+        <div class="header-bar">
+            <a href="index.html" class="home-link">
+            <div class="logo-content" i> <!--a is a bit flaky so try to link it via js-->
+                <img src="A3/Logo.png" alt="Logo" class="logo">
+                <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
             </div>
-        </header>
+            </a>
+            
+
+            <div class="topnav">
+                <div class="search-bar">
+                     <div class="input-box-search">
+                            <input type="text" class="search" placeholder="Search" id="search" oninput="searchBar()"> <!--dropdownsearch-->
+                    </div>
+                             <button class="search-icon" id="search-button"> <img src="A3\search-icon.png" alt="search-icon" class="search-img"></button>
+                </div>
+                <div class="menu">
+                    <button class="menubutton" onclick="menuBar()"> <img src="A3\menu-icon.png" alt="menu-icon" class="menu-img"></button> <!--js for opening menu-->
+                    <button class="cartbutton" onclick="openCart()"> <img src="A3\cart-icon.png" alt="cart-icon" class="cart-img" ></button>
+                    <div id="cartNotif" class="notif">1</div>
+                </div>
+                <div class="search-drop" id="searchDrop">
+                    <div class="search-items">
+                        <div class="book-search">
+                            <a href="single-product-page.html" class="single-link">  
+                                <div class="search-img">
+                                    <img src="A3/wicked-king.jpg" alt="wicked-king" class="searchimg">
+                                </div>
+                                <div class="searchcontent">
+                                    <p class="search-title">The Wicked King</p>
+                                    <p class="search-author">Holly Black</p>
+                                    <p class="bestseller-search">#1 Bestseller</p>
+                                    <p class="search-price"> $11.69</p>
+                                    <p class="search-discount">$12.99</p>
+                                </div>
+                            </a>
+                        </div>
+                        <hr class="searchdiv">
+                        <div class="book-search">
+                            <div class="search-img">
+                                <img src="A3/modern-fae.jpg" alt="modern-fae" class="searchimg">
+                            </div>
+                            <div class="searchcontent">
+                                <p class="search-title">Book Title</p>
+                                <p class="search-author">Author</p>
+                                <p class="bestseller-search">#1 Bestseller</p>
+                                <p class="search-price"> Price</p>
+                                <p class="search-discount">discount</p>
+                            </div>
+                        </div>
+                        <hr class="searchdiv">
+                        <div class="book-search">
+                            <div class="search-img">
+                                <img src="A3/modern-fae.jpg" alt="modern-fae" class="searchimg">
+                            </div>
+                            <div class="searchcontent">
+                                <p class="search-title">Book Title</p>
+                                <p class="search-author">Author</p>
+                                <p class="bestseller-search">#1 Bestseller</p>
+                                <p class="search-price"> Price</p>
+                                <p class="search-discount">discount</p>
+                            </div>
+                        </div>
+                        <hr class="searchdiv">
+                        <div class="book-search">
+                            <a href="multiProduct.html">
+                            <div class="author-rec">
+                                <p class="author-text"> View more books by</p>
+                                <p class="author-name"><b>Holly Black</b></p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
     
         <div class="drop-down-menu" id="menuDrop">
             <div class="menu-content menu-header">
@@ -310,14 +311,14 @@
                     </div>
                 </div>
                 <div class="series-product">
-                    <img class="grid-product-image series-img" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <img class="grid-product-image series-img" src="A3/wicked-king.jpg" alt="wicked-king">
                     <div class="product-information">
                         <figcaption class="info">Name</figcaption>
                         <span class="info-price">Price</span>
                     </div>
                 </div>
                 <div class="series-product">
-                    <img class="grid-product-image series-img" src="A3/the-cruel-prince-the-folk-of-the-air.jpg" alt="cruel-prince-the-folk-of-the-air">
+                    <img class="grid-product-image series-img" src="A3/modern-fae.jpg" alt="modern-fae">
                     <div class="product-information">
                         <figcaption class="info">Name</figcaption>
                         <span class="info-price">Price</span>

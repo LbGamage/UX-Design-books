@@ -379,10 +379,21 @@
     font-size: 1.5em;
   }
 
-  .search-discount{
+  .search-discount, .product-discount{
     font-size: 1em;
     text-decoration: line-through;
     color: #A1483D;
+  }
+
+  .info-price{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .product-discount{
+    padding-left: 1%;
+    font-size: 0.8em;
   }
 
   .author-rec{
