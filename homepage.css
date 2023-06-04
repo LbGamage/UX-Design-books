@@ -170,8 +170,8 @@
 
   .product-grid{
     display: flex;
-    margin-left: 3vw;
-    margin-right: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     text-align: center;
   }
 
@@ -216,6 +216,7 @@
     align-items: center;
     margin-left: 2vw;
     margin-right: 2vw;
+    justify-content: space-between;
     }
 
     .view-all{
@@ -233,6 +234,10 @@
   text-align: center;
   padding-top: 5vw;
    }
+  
+  .carousel-header{
+    text-align: center;
+  }
 
     .caro-img{
     width:60vw;
@@ -618,7 +623,7 @@
       align-items: center;
     }
 
-    .book-carousel{
+    .carousel-1{
       padding-top: 15%;
     }
 
@@ -796,16 +801,6 @@
   .nav-past{
     color: #6F6F6F;
   }
-
-  .nav-arrow{
-    height: 0%;
-  }
-  
-  .rec-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   }
 
 .navigation{
   display: flex;
@@ -1033,12 +1028,6 @@ font-size: 2em;
 
 .form1{
   order: 1;
-}
-
-.navigation{
-  display: flex;
-  font-size: small;
-  align-items: center;
 }
 
 .nav-arrow{
@@ -1326,8 +1315,8 @@ font-size: 2em;
  .order-summary, .rec-header{ /*merge with the one in the main css*/
   display: flex;
   align-items: center;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
  }
 
  .order-summary{
@@ -2256,5 +2245,4 @@ color: rgba(0, 0, 0, 0.6)
   }
   /*lihini end*/
 
-  /*sam start trying to figure out wy teh footer floats to the top in teh product page*/
   
