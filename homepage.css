@@ -7,6 +7,8 @@
     margin: 0px;
     position: relative;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 
   }
 
@@ -451,7 +453,6 @@
 
 .copyright{
     font-size: 0.5em;
-    text-align: center;
     padding-bottom: 2%;
 }
   
@@ -1894,6 +1895,8 @@ ul {list-style-type: none;}
 .lefth {
   width: 15%;
   margin-right: 20px;
+  text-align: center;
+  vertical-align: top;
   
 }
 
@@ -1963,6 +1966,24 @@ ul {list-style-type: none;}
     margin: 5px 0;
   }
 
+  .add-to-cart-button{
+    background-color: #A1483D;
+    color: #ffffff;
+    padding: 0.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family:'IBM Plex Serif', serif;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.rem;
+    cursor: pointer;
+    height: 25px;
+    width: 150px;
+  
+  }
+
 .squares{
   float: right;
   display: inline-block;
@@ -1971,7 +1992,11 @@ ul {list-style-type: none;}
   bottom: 1.1vw;
 }
 
-
+.row p{
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
   .rectangle {
     background-color: #1B605D; 
     height: 100px; /* Set the height of the rectangle */
@@ -1997,61 +2022,7 @@ ul {list-style-type: none;}
     cursor: pointer;
    }
 
-   .footer-row {
-    width: 98%;
-    display: flex;
-   }
-
-   .footer{
-    background-color: #2f2f2f;
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    color: white;
-    padding-top: 3%;
-   }
-
-.footer-column{
-  width: 50%;
-  padding: 10px;
-  height: 20vw;
-}
-
-.footer-list{
-  padding-bottom: 2%;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-column.column2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.footer-text{
-  padding-left: 12%;
-}
-
-.footer-button{
-  border: none;
-  vertical-align: top;
-  border-radius: 50px;
-  background: #b7b7b7;
-  font-size:small;
-  padding: 1.5vw;
-  width: 20vw;
-  height: 8px;
-  position: relative;
-  left: 20%;
-  right: 100%;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
-  color: rgba(0, 0, 0, 0.6)
-}
+  
 
 .loading{
   display:flex;
@@ -2158,6 +2129,66 @@ ul {list-style-type: none;}
   margin-right: 3%;
 }
 
+.footer-row {
+  width: 98%;
+  display: flex;
+ }
+
+ .footer{
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ margin-top: auto;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  color: white;
+  padding-top: 3%;
+  flex-direction: column;
+  position: relative;
+ }
+
+.footer-column{
+width: 50%;
+padding: 10px;
+height: 20vw;
+}
+
+.footer-list{
+padding-bottom: 2%;
+display: flex;
+justify-content: center;
+}
+
+.footer-column.column2{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.footer-text{
+padding-left: 12%;
+}
+
+.footer-button{
+border: none;
+vertical-align: top;
+border-radius: 50px;
+background: #b7b7b7;
+font-size:small;
+padding: 1.5vw;
+width: 20vw;
+height: 8px;
+position: relative;
+left: 20%;
+right: 100%;
+text-align: left;
+align-items: center;
+justify-content: center;
+color: rgba(0, 0, 0, 0.6)
+}
   /*SAM END*/
 
   /*lihini start*/
@@ -2175,7 +2206,7 @@ ul {list-style-type: none;}
     }
 
     .footer{
-      padding-bottom: 50%;
+        padding-bottom: 50px;
     }
 
     .footer-text{
@@ -2220,3 +2251,6 @@ ul {list-style-type: none;}
     }
   }
   /*lihini end*/
+
+  /*sam start trying to figure out wy teh footer floats to the top in teh product page*/
+  
