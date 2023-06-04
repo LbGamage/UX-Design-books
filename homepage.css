@@ -859,8 +859,6 @@
   bottom: 2.5vw;
 }
 
-
-
 .wishlist{
   display: flex;
   flex-direction: row;
@@ -1151,7 +1149,6 @@ font-size: 2em;
   border-color: #ff3860;
  }
 
-
  .form-inputbox small{ /*= form-control small*/
   color:#ff3860 ;
   font-size: 0.7em;
@@ -1281,7 +1278,6 @@ font-size: 2em;
     transition: trasnform 0.5s ease;
     transform-origin: center;
   }
-
 
  .row-item{
   display: flex;
@@ -1783,6 +1779,14 @@ input::-webkit-inner-spin-button {
 }
  
 /*form end*/
+
+/*filter*/
+
+.expanded{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 /*lihini end*/
 
 
@@ -1921,18 +1925,6 @@ ul {list-style-type: none;}
 
 .headContainer{
   display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.lefth {
-  width: 15%;
-  margin-right: 20px;
-  text-align: center;
-  vertical-align: top;
-  
 }
 
 .righth {
@@ -2021,10 +2013,6 @@ ul {list-style-type: none;}
 
 .squares{
   float: right;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  bottom: 1.1vw;
 }
 
 .row p{
@@ -2203,7 +2191,7 @@ align-items: center;
 }
 
 
-.footer-text{
+.footer-text,.search-results{
 padding-left: 12%;
 }
 
@@ -2227,6 +2215,44 @@ color: rgba(0, 0, 0, 0.6)
   /*SAM END*/
 
   /*lihini start*/
+  /*multi-product header*/
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .column-p {
+    flex: 1;
+  }
+  
+  .sort{
+    background-color: #b7b7b7;
+    border-radius: 50px;
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .column-p.layout-options {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-end;
+    padding-right: 5%;
+  }
+  
+  .layout-button{
+    width: 2vw;
+  }
+  
+  .sort-show{
+    display: flex;
+    flex-direction: row;
+  }
+
+/*homepage*/
   @media only screen and (max-width : 900px) {
     .dates{
       width:100%;
