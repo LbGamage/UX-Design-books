@@ -218,7 +218,7 @@
   .carousel-1{
   text-align: center;
   padding-top: 5vw;
-  }
+=  }
 
     .caro-img{
     width:40vw;
@@ -578,6 +578,24 @@
     }
     .grid-product-image{
       width: 20vw;
+    }
+
+    .content-free{
+    width: 100%;
+    }
+
+    .bannerCalendar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-carousel{
+      padding-top: 15%;
+    }
+
+    .caro-img{
+      width: 70%;
     }
 
   }
@@ -1697,6 +1715,8 @@ input::-webkit-inner-spin-button {
    .nav-arrow{
     height: 2vw;
   }
+
+ 
 }
  
 /*form end*/
@@ -1709,11 +1729,11 @@ ul {list-style-type: none;}
 
 /* Month header */
 .month {
-  padding: 70px 25px;
   width: 100%;
   background: #ffffff;
   text-align: center;
   color: black;
+  padding-left: 5%;
 }
 
 /* Month list */
@@ -1802,16 +1822,14 @@ ul {list-style-type: none;}
 
   }
   
-  .Dates {
+  .dates {
     width: 40%;
   }
   
-  .banner {
+  .banner-2 {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   
   .mothersDay { /*lihini: I specified this class cause it was causing issues throughout the page*/
@@ -2118,3 +2136,19 @@ ul {list-style-type: none;}
 }
 
   /*SAM END*/
+
+  /*lihini start*/
+  @media only screen and (max-width : 900px) {
+    .dates{
+      width:100%;
+      padding-top: 5%;
+      padding-left: 5%;
+    }
+
+    .banner-2{
+      width: 100%;
+      display: flex;
+      padding-right: 5%;
+    }
+  }
+  /*lihini end*/
