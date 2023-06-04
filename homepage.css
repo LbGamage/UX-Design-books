@@ -580,9 +580,7 @@
       padding-left: 70%;
     }
 
-    .search-img, .menu-img, .cart-img{
-      width: 5vw;
-    }
+   
 
     .menu{
       display: flex;
@@ -2316,6 +2314,24 @@ color: rgba(0, 0, 0, 0.6)
 
     .footer-divier{
       width: 80%;
+    }
+    
+    .header-container{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .column-p.search-num{
+      display: none;
+    }
+
+    .sort{
+      width: 20vw;
+    }
+
+   .search-img, .menu-img, .cart-img, .layout-button{
+      width: 5vw;
     }
 
     
