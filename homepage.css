@@ -7,7 +7,6 @@
     margin: 0px;
     position: relative;
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     overflow-x: hidden;
   }
@@ -214,8 +213,8 @@
     .rec-header{
     display: flex;
     align-items: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     justify-content: space-between;
     }
 
@@ -794,6 +793,10 @@
       .series-product{
         width: 30vw;
       }
+
+      .popular{
+        padding-top: 8%;
+      }
     }
 
       /*single product page css*/
@@ -1312,15 +1315,12 @@ font-size: 2em;
   padding-top: 4%;
  }
 
- .order-summary, .rec-header{ /*merge with the one in the main css*/
-  display: flex;
+  .order-summary{
+    font-weight: bold;
+    display: flex;
   align-items: center;
   margin-left: 3vw;
   margin-right: 3vw;
- }
-
- .order-summary{
-    font-weight: bold;
  }
 
  .subtot, .tot, .taxes, .coupon, .return, .order-footer,.ship, .gift-card{
@@ -2233,14 +2233,15 @@ color: rgba(0, 0, 0, 0.6)
 
     .footer-column.column2{
       padding-bottom: 0%;
+      padding-top: 10%;
     }
 
     .footer-row {
       width: 98%;
       display: flex;
       flex-direction: column;
+      padding-bottom: 15%;
       align-items: center;
-      padding-bottom:0% ;
       text-align: center;
      }
   
@@ -2264,7 +2265,7 @@ color: rgba(0, 0, 0, 0.6)
     }
     .footer-button{
       left: 0%;
-      padding: 20px;
+      padding: 18px;
       width: 300px;
     }
 
