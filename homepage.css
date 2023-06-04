@@ -218,7 +218,7 @@
   .carousel-1{
   text-align: center;
   padding-top: 5vw;
-=  }
+   }
 
     .caro-img{
     width:40vw;
@@ -463,6 +463,10 @@
 .sub-content{
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.recom-grid{
+  padding-bottom: 5%;
 }
 
   /*start menu end*/
@@ -745,7 +749,7 @@
       .recom-grid{
         width: 200vw ;
         height: 40vw;
-        padding-bottom: 5%;
+        padding-bottom: 15%;
         padding-left: 1%;
       }
     
