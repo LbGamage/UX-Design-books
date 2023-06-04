@@ -1970,33 +1970,35 @@ ul {list-style-type: none;}
     cursor: pointer;
    }
 
-   .row {
-    width: 100%;
-
+   .footer-row {
+    width: 98%;
+    display: flex;
    }
 
    .footer{
     background-color: #2f2f2f;
-    height: 300px;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
     color: white;
-    
+    justify-content: center;
+    padding-top: 3%;
    }
 
-.Column1{
-    width: 33.33%;
-    display: table;
-    float: left;
-    align-content: left;
-    text-align: left;
-    vertical-align: middle;
+.footer-column{
+  width: 50%;
+  padding: 10px;
+  height: 20vw;
 }
 
-.Column2{
+.footer-list{
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.column2{
   width: 33.33%;
   display: table;
   float: left;
@@ -2004,12 +2006,9 @@ ul {list-style-type: none;}
   text-align: center;
 }
 
-.Column3{
-  width: 33.33%;
-  display: table;
-  float: left;
-  align-content: center;
-  text-align: center;
+
+.footer-text{
+  padding-left: 15%;
 }
 
 .footerButton{
@@ -2149,6 +2148,30 @@ ul {list-style-type: none;}
       width: 100%;
       display: flex;
       padding-right: 5%;
+    }
+
+    .footer{
+      padding-bottom: 50%;
+    }
+
+    .footer-row {
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom:0% ;
+      text-align: center;
+     }
+  
+     .footer{
+    position: relative;
+      bottom: 0;
+      width: 100%;
+      color: white;
+     }
+  
+    .footer-column{
+     padding-bottom: 3%;
     }
   }
   /*lihini end*/
