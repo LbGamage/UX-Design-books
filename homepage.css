@@ -713,7 +713,7 @@
     
     .searchdiv-bottom{
       position: relative;
-      top: 22vw;
+      width: 100%;
     }
     
     .view-cart{
@@ -753,7 +753,7 @@
           height: 90vh;
         }
       .pop-img{
-        padding-top: 20px;
+        padding-top: 40px;
       }
       .searchimg{
         min-width: 80px;
@@ -807,6 +807,9 @@
       .popular{
         padding-top: 8%;
       }
+
+       .ship-info{
+        padding-top: 0%;
     }
 
       /*single product page css*/
