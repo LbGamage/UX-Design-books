@@ -886,7 +886,7 @@ font-size: 2em;
 .delivery-text{
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
 }
 
 .truck{
