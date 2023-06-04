@@ -97,7 +97,7 @@ function addedCart(){
   setTimeout(()=>{
     addedToCart.innerText ="Add to Cart"
     addedToCart.style.backgroundColor="#A1483D"
-    addedToCart.style.color="black"
+    addedToCart.style.color="white"
 }, 2000);
 }
 
