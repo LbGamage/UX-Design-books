@@ -19,7 +19,7 @@
     z-index: 9;
   }
 
-  .a{
+  a{
     text-decoration: none;
   }
 
@@ -178,7 +178,7 @@
     color: #A1483D;
   }
 
-  .view-full-catalogue, .add-to-cart, .view-cart{
+  .view-full-catalogue, .add-to-cart, .view-cart, .add-to-cart-button{
     background-color: #F87E60;
     color: #ffffff;
     padding: 0.8%;
@@ -191,6 +191,13 @@
     border-radius: 25px;
     font-size: 1.1rem;
     cursor: pointer;
+    }
+
+    .add-to-cart-button{
+      background-color: #A1483D;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-top: 1%;
     }
 
     .catalogue-button{
