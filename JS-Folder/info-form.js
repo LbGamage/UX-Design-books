@@ -130,12 +130,8 @@ function setError (input, message) {
   formInputBox.className = 'form-inputbox error-border';
 }
 
-//function for no erros
-function setSuccess(input, message){
-  const formInputBox = input.parentElement;
-  formInputBox.className = 'form-inputbox';
-}
 
+//order summary drop down tab when screen size is small
 function orderSummary(){
   var orderContent = document.getElementById('orderSummary');
   var orderArrow = document.querySelector('.order-arrow');

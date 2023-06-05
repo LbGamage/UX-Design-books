@@ -1080,7 +1080,7 @@
   margin-left: 3vw;
   margin-right: 3vw;
  }
-
+ /*positiong order summary content*/
  .subtot, .tot, .taxes, .coupon, .return, .order-footer,.ship, .gift-card{
   position: relative;
   left: 13%;
@@ -1141,7 +1141,7 @@
     align-content: center;
     bottom: 8%;
   }
-
+  /*gift card/coupon input*/
   .coupon-input{
     border: 1px solid #B2BCCA;
     border-radius: 4px;
@@ -1181,7 +1181,7 @@
   top:1.3vw;
   padding-right:0.5vw;
 }
-
+/*order footer styling*/
 .nav-order{
   display: flex;
   list-style-type: none;
@@ -1213,6 +1213,7 @@ top: 18vw;
 float: bottom;
 }
 
+/*paypal button styling*/
 .ppbutton{
 border: none;
 background: none;
@@ -1222,7 +1223,7 @@ cursor: pointer;
 }
 
 /*payment form*/
-
+/*past information from forms styling*/
 .past-info{
 width: 22vw;
 padding-top: 2%;
@@ -1242,7 +1243,7 @@ justify-content: space-between;
 text-align: left;
 padding-left: 4%;
 }
-
+/*change button*/
 .change{
 color: #A1483D;
 border: none;
@@ -1260,20 +1261,20 @@ cursor: pointer;
 color: #828282;
 font-size: 0.8em;
 }
-
+/*paymnet form styling*/
 .payment-form, .past-info{
 border: 1px solid #B2BCCA;
 border-radius: 4px;
 width: 35vw;
 }
-
+/*credit card input form conatiner*/
 .credit-details{
 background-color: #EEEEEE;
 border: 1px solid #D9D9D9;
 padding-top: 3%;
 padding-bottom: 3%;
 }
-
+/*payment type image styling*/
 .credit-img{
   width: 5vw;
   padding-right: 5%;
@@ -1298,11 +1299,11 @@ padding-top: 2%;
 .pay-type{
   height: 3.5vw;
 }
-
+/*paymnet type container positioning*/
 .afterpay, .pay-type{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; /*align icons to the right end of the container*/
   align-items: center;
 }
 
@@ -1317,7 +1318,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 }
-
+/*shipping option form styling*/
 .shipping-option{
 display: flex;
 flex-direction: column;
@@ -1328,6 +1329,8 @@ font-size: 0.8em;
 padding-left: 5%;
 color: #6f6f6f;
 }
+
+/*billing address styling*/
 .billing-notice{
 margin:0%;
 padding: 0%;
@@ -1342,183 +1345,6 @@ padding-top: 2%;
 margin:0%;
 padding: 0%;
 }
-
-/* Works for Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
- @media only screen and (max-width : 900px)
-{
-  
-  body{
-    overflow-x: hidden;
-  }
-
-  .column-form, .main-checkout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;  
-    }
-
-
-  .payment-content{
-    position: relative;
-    bottom: 4vw;
-    width: 100vw;
-  }
-
-  .order-items{
-    left: 6%;
-    width: 80%;
-    height: 15vw;
-  }
-
-  .c-items{
-    position: relative;
-    bottom: 4vw;
-    order: 1;
-    display: none;
-  }
-
-  .form1{
-    padding-bottom: 10%;
-  }
-
-  .tot, .coupon,.ship, .gift-card, .taxes{
-    position: relative;
-    left: 8%;
-    font-size: 1em;
-    width:80% ;
-    }    
-    .subtot,.return, .order-footer{
-    display: none;
-    }
-
-    .ship{
-    font-size: 0.8em;
-    height: 2px;
-    }
-
-    .total-tax{
-    padding-top: 35px;
-    }
-    .taxes{
-    font-size: 0.8em;
-    }
-
-    .order-dropdown{
-    position: relative;
-    bottom: 2vw;
-    background-color: #F5F5F5;
-    border: 1px solid #D9D9D9;
-    width: 90%;
-    display: flex;
-  }
-  .order-dropdown:hover{
-    cursor: pointer;
-  }
-  .order-arrow{
-    height: 6vw;
-    visibility: visible;
-  }
-  .order-arrow.rotate{ /*add order summar arrow to this after merge*/
-    transform: rotate(180deg);
-  }
-
-  .coupon-input{
-    border: 1px solid #B2BCCA;
-    border-radius: 4px;
-    width: 35vw;
-    height: 8vw;
-    padding-left: 1%;
-    font-size: 0.8em;
-    }
-
-  .coupon-arrow{
-    height: 5vw;
-  }
-
-  .login, .sign-up, .continue{
-    width: 40vw;
-  }
-
-  .input-row{
-    width: 90vw;
-  }
-
-  .form-inputbox input, .dropdown{   
-    height: 25px;
-    width: 100%;
-   }  
-
-   input.text-box{   
-    height: 25px;
-    width: 75%;
-   }  
-
-   .cvcnum{
-    position: relative;
-    right: 12%;
-   }
-
-   .payment-form, .past-info{
-    width: 70vw ;
-   }
-
-   .form-body{
-    padding-top:5% ;
-   }
-
-   .order-content{
-    width: 69vw;
-   }
-
-   .order-name{
-    padding-top: 2%;
-    font-size: 1em;
-    width: 100vw;
-   }
-
-   .order-author{
-    font-size:0.8em ;
-   }
-
-   .order-price{
-    position: relative;
-    text-align: right;
-   }
-
-   .formname-bg{
-    padding-top: 5%;
-   }
-
-   .pay-type{
-    height: 6vh;
-    padding-top: 1%;
-   }
-   .credit-img{
-    width: 9vw;
-    padding-right: 5%;
-  }
-
-   .dropdown.store{
-    width: 70vw;
-    height: 5vw;
-   }
-
-   .shop-location{
-    padding-left: 16%;
-   }
-
-   .nav-arrow{
-    height: 2vw;
-  }
- 
-}
 /*form end*/
 
 /*align multi-product page filter-expanded*/
@@ -1527,8 +1353,46 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   align-content: center;
 }
+/*multi-product header*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
-/*LIHINI END*/
+.column-p {
+  flex: 1;
+}
+
+/*multi product page sort button*/
+.sort{
+  background-color: #b7b7b7;
+  border-radius: 50px;
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*multi-product page layout fix*/
+.column-p.layout-options {
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: flex-end;
+  padding-right: 5%;
+}
+
+.layout-button{
+  width: 2vw;
+}
+
+.sort-show{
+  display: flex;
+  flex-direction: row;
+}
+
+/*LIHINI END (media queries for this section are at the bottom)*/
 
 
   /*SAM START*/
@@ -1626,7 +1490,6 @@ ul {list-style-type: none;}
     margin-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-
   }
   
   .dates {
@@ -1748,7 +1611,6 @@ ul {list-style-type: none;}
     cursor: pointer;
     height: 25px;
     width: 150px;
-  
   }
 
 .squares{
@@ -1784,8 +1646,6 @@ ul {list-style-type: none;}
     font-size: 1.1rem;
     cursor: pointer;
    }
-
-  
 
 .loading{
   display:flex;
@@ -1833,8 +1693,6 @@ ul {list-style-type: none;}
   text-align: right;
   position: absolute;
   right: 0;
-  
-
 }
 
 .price{
@@ -1920,33 +1778,9 @@ span.checkout-button{
   margin-right: 3%;
 }
 
-
 .recom{
   clear: both;
 }
-
-@media (max-width: 900px) {
-  .seasonal-paper{
-  flex-direction: column;
-  }
-  .gift-image img{
-    width: 70vw;
-    height: auto;
-  }
-
-  span.checkout-button{
-    justify-content: center;
-    float: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .book-recs{
-
-  }
-
-}
-
 
 .footer-row {
   width: 98%;
@@ -2009,8 +1843,6 @@ justify-content: center;
 color: rgba(0, 0, 0, 0.6)
 }
 
-
-
 /*confirmation*/
 
 .main-checkout-confirmation{
@@ -2040,60 +1872,11 @@ color: rgba(0, 0, 0, 0.6)
   margin-left: 15%;
   max-width: 50vw;
 }
-
-@media (max-width: 768px) {
-  .confirmation-columns{
-    flex-direction: column;
-  }
-  .summary-column{
-    display: none;
-    width: 0;
-  }
-  .confirmation-column{
-    width: 100%;
-  }
-}
 /*SAM END*/
 
-  /*lihini start*/
-  /*multi-product header*/
-  .header-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .column-p {
-    flex: 1;
-  }
-  
-  .sort{
-    background-color: #b7b7b7;
-    border-radius: 50px;
-    width: 10vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .column-p.layout-options {
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: flex-end;
-    padding-right: 5%;
-  }
-  
-  .layout-button{
-    width: 2vw;
-  }
-  
-  .sort-show{
-    display: flex;
-    flex-direction: row;
-  }
 
-  @media only screen and (max-width : 900px) {
+  /*LIHINI START */
+    @media only screen and (max-width : 900px) {
      /*media query for homepage*/
     .topnav{
       display: flex;
@@ -2341,6 +2124,178 @@ padding-top: 0%;
   padding-bottom: 15%;
 }
 
+/*payment form*/
+body{
+  overflow-x: hidden;
+}
+
+.column-form, .main-checkout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;  
+  }
+
+
+.payment-content{
+  position: relative;
+  bottom: 4vw;
+  width: 100vw;
+}
+
+.order-items{
+  left: 6%;
+  width: 80%;
+  height: 15vw;
+}
+
+.c-items{
+  position: relative;
+  bottom: 4vw;
+  order: 1;
+  display: none;
+}
+
+.form1{
+  padding-bottom: 10%;
+}
+
+.tot, .coupon,.ship, .gift-card, .taxes{
+  position: relative;
+  left: 8%;
+  font-size: 1em;
+  width:80% ;
+  }    
+  .subtot,.return, .order-footer{
+  display: none;
+  }
+
+  .ship{
+  font-size: 0.8em;
+  height: 2px;
+  }
+
+  .total-tax{
+  padding-top: 35px;
+  }
+  .taxes{
+  font-size: 0.8em;
+  }
+
+  .order-dropdown{
+  position: relative;
+  bottom: 2vw;
+  background-color: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  width: 90%;
+  display: flex;
+}
+.order-dropdown:hover{
+  cursor: pointer;
+}
+.order-arrow{
+  height: 6vw;
+  visibility: visible;
+}
+.order-arrow.rotate{ 
+  transform: rotate(180deg);
+}
+
+.coupon-input{
+  border: 1px solid #B2BCCA;
+  border-radius: 4px;
+  width: 35vw;
+  height: 8vw;
+  padding-left: 1%;
+  font-size: 0.8em;
+  }
+
+.coupon-arrow{
+  height: 5vw;
+}
+
+.login, .sign-up, .continue{
+  width: 40vw;
+}
+
+.input-row{
+  width: 90vw;
+}
+
+.form-inputbox input, .dropdown{   
+  height: 25px;
+  width: 100%;
+ }  
+
+ input.text-box{   
+  height: 25px;
+  width: 75%;
+ }  
+
+ .cvcnum{
+  position: relative;
+  right: 12%;
+ }
+
+ .expire-cvc{
+  width: 110%;
+ }
+
+ .payment-form, .past-info{
+  width: 70vw ;
+ }
+
+ .form-body{
+  padding-top:5% ;
+ }
+
+ .order-content{
+  width: 69vw;
+ }
+
+ .order-name{
+  padding-top: 2%;
+  font-size: 1em;
+  width: 100vw;
+ }
+
+ .order-author{
+  font-size:0.8em ;
+ }
+
+ .order-price{
+  position: relative;
+  text-align: right;
+ }
+
+ .formname-bg{
+  padding-top: 5%;
+ }
+
+ .pay-type{
+  height: 6vh;
+  padding-top: 1%;
+ }
+ .credit-img{
+  width: 9vw;
+  padding-right: 5%;
+}
+
+ .dropdown.store{
+  width: 70vw;
+  height: 5vw;
+ }
+
+ .shop-location{
+  padding-left: 16%;
+ }
+
+ .nav-arrow{
+  height: 2vw;
+}
+
+/*bottom part of homepage*/
+
     .dates{
       width:100%;
       padding-top: 5%;
@@ -2422,9 +2377,39 @@ padding-top: 0%;
    .search-img, .menu-img, .cart-img, .layout-button{
       width: 5vw;
     }
-
     
   }
-  /*lihini end*/
+  /*LIHINI END*/
+
+  /*SAM START*/
+
+  @media (max-width: 900px) {
+    .seasonal-paper{
+      flex-direction: column;
+      }
+      .gift-image img{
+        width: 70vw;
+        height: auto;
+      }
+    
+      span.checkout-button{
+        justify-content: center;
+        float: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    .confirmation-columns{
+      flex-direction: column;
+    }
+    .summary-column{
+      display: none;
+      width: 0;
+    }
+    .confirmation-column{
+      width: 100%;
+    }
+  }
+  /*SAM END*/
 
   

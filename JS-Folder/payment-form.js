@@ -28,6 +28,7 @@ paymentForm.addEventListener('submit', e => {
     const expiryValue = expiryDate.value.trim();
     const cvcValue = cvc.value.trim();
   
+    //verification for card name
     if(cardNameValue ===''|| cardNameValue.length < 2){
       setError(cardName,'Name on Card is Required');
       isValid = false;
@@ -38,6 +39,7 @@ paymentForm.addEventListener('submit', e => {
       setSuccess(cardName);
     }
 
+    //verification for card numbers
     if(cardValue ===''|| cardValue.length !== 12 || !/^[0-9]+$/.test(cardValue)){
         setError(cardNumber,'Please Enter Numbers on Card');
         isValid = false;
@@ -45,15 +47,15 @@ paymentForm.addEventListener('submit', e => {
         setSuccess(cardNumber);
       }
 
-    const todayDate = new Date();
-
+    const todayDate = new Date(); //get current date
+    //check expiry date of card is not already expired
     if (expiryValue===''|| new Date(expiryValue+'-01') < todayDate){
         setError (expiryDate, 'Date not valid or Card has Expired');
         isValid = false;
     } else{
         setSuccess(expiryDate);
     }
-
+    //verification for cvc number
     if(cvcValue ===''|| cvcValue.length !== 3 || !/^[0-9]+$/.test(cvcValue)){
         setError(cvc,'Please Enter Numbers on Card');
         isValid = false;
@@ -81,14 +83,15 @@ paymentForm.addEventListener('submit', e => {
     formInputBox.className = 'form-inputbox';
   }
   
+  //order summary drop down when screen size is smaller
   function orderSummary(){
     var orderContent = document.getElementById('orderSummary');
     var orderArrow = document.querySelector('.order-arrow');
     if (orderContent.style.display === "none"){
       orderContent.style.display = "block";
-      orderArrow.classList.add('rotate');
+      orderArrow.classList.add('rotate'); //rotate arrow 
     } else{
       orderContent.style.display ="none";
-      orderArrow.classList.remove('rotate');
+      orderArrow.classList.remove('rotate'); //rotate arrow 
     }
   };

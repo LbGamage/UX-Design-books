@@ -63,27 +63,28 @@ function openCart() {
 
 //When add to cart button is clicked the cart and notification gets updates
 function addedCart(){
-  const addedToCart = document.getElementById('addCart');
+  const addedToCart = document.getElementById('addCart'); 
   const notif = document.getElementById('cartNotif');
   const cartItem =document.getElementById('popCart');
   const emptyCart = document.getElementById('emptyCart');
 
-    notif.style.display = "block";
+    notif.style.display = "block"; //Displays notification and cart item
     cartItem.style.display = "block";
-    emptyCart.style.display="none";
+    emptyCart.style.display="none"; //hides empty cart message
   
-  addedToCart.innerText = "Added to Cart";
+  addedToCart.innerText = "Added to Cart";  //button text and colour is changed
   addedToCart.style.backgroundColor="#F9C290"
   addedToCart.style.color="black"
   setTimeout(()=>{
-    addedToCart.innerText ="Add to Cart"
+    addedToCart.innerText ="Add to Cart"  //goes back to normal after  2 seconds
     addedToCart.style.backgroundColor="#A1483D"
     addedToCart.style.color="white"
 }, 2000);
 }
 
+//scroll functions for genre bar
 function rightScroll() {
-  const left = document.querySelector(".scroll-images");
+  const left = document.querySelector(".scroll-images"); 
   left.scrollBy(200, 0);
 }
 function leftScroll() {
