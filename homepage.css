@@ -783,12 +783,13 @@
 /*single product ends*/
 
 /*form css*/
- 
+ /*main checkout body*/
 .main-checkout{
   display: flex;
   justify-content: center;
-  font-family: 'IBM Plex Sans Thai', sans-serif;  
+  font-family: 'IBM Plex Sans Thai', sans-serif;  /*font change for the forms*/
 }
+/*making two columns for the form pages*/
 .column-form{
   width: 50%;
   min-height: 66vw;
@@ -796,13 +797,13 @@
 }
 
 .form1{
-  order: 1;
+  order: 1; /*changing the order of the columns so this is first*/
 }
 
 .nav-arrow{
   height: 1vw;
 }
-
+/*form navigation*/
 .past, .nav-location, .future{
   padding-left: 2px;
   padding-right: 2px;
@@ -810,19 +811,18 @@
 
 .past{
   color: #A1483D;
-
 }
 
 .future, .seperator{
   color: #6F6F6F;
-
 }
 
+/*join - first section of first column styling*/
 .join{
   position: relative;
   text-align: center;
 }
-
+/*form button styling*/
 .login, .sign-up, .continue{
   background-color:#F9C290;
   color: #000;
@@ -837,12 +837,12 @@
   cursor: pointer;
   font-weight: 600;
  }
-
+/*main input form body*/
  .form-body{
   display: flex;
   justify-content: center;
  }
-
+/*organizing the input elements using flex*/
  .input-row{
   display: flex;
   flex-direction: row;  
@@ -859,6 +859,7 @@
   padding-right: 1vw;
  }
 
+ /*store location drop down*/
  .dropdown.store{
   width: 34vw;
   height: 6vh;
@@ -868,6 +869,7 @@
   padding-left: 14%;
  }
 
+ /*form title styling*/
  .form-names{
   font-weight: 400;
   color: #828282;
@@ -880,6 +882,7 @@
   padding-right: none;
    }
 
+   /*form input box styling to make them look uniform*/
  .form-inputbox input, .dropdown{
   border: 0.1vw solid #B2BCCA;
   border-radius: 4px; 
@@ -890,12 +893,11 @@
   height: 1.5vw;
  }
 
-
- .form-inputbox.error-border input{
+ .form-inputbox.error-border input{ /*on error highlight border*/
   border-color: #ff3860;
  }
 
- .form-inputbox small{ /*= form-control small*/
+ .form-inputbox small{ /*form verification error message styling*/
   color:#ff3860 ;
   font-size: 0.7em;
   height: 1px;
@@ -909,11 +911,12 @@
   bottom: 2vw;
 }
 
- .form-inputbox.error-border small{
+ .form-inputbox.error-border small{ /*styling for visible after submit is clicked*/
   color:#ff3860 ;
   visibility: visible;
  }
 
+ /*form divider styling*/
  .strikethrough, .seperator{
   display: flex;
   flex-direction: row;
@@ -934,6 +937,7 @@
   margin-left: 10px
 }
 
+/*organzing the input boxes*/
 .address-column, .email-column{
   flex-direction: column;
 }
@@ -962,15 +966,7 @@
   bottom: 2vw;
 }
 
- .email-verifying{
-  width: 1.5vw;
-  height: 1.5vw;
-  position: relative;
-  bottom: 2vw;
-  left:30vw;
-  visibility: hidden;
-}
-
+/*form title*/
 .form-heading{
   padding-left: 1vw;
   height: 2vw;
@@ -978,7 +974,7 @@
   padding-bottom: 2%;
   padding-top: 2%;
 }
-
+/*text aligning*/
  .express{
   text-align: center;
  }
@@ -1002,10 +998,10 @@
   border-width: 1px; 
   float: left;
   padding-top: 3%;
-  overflow: hidden;
-  order: 2;
+  overflow: hidden; 
+  order: 2; /*changing order of columns*/
   }
-
+ /*drop down order-summary for when screen size is small*/
   .order-dropdown{
     display: flex;
     flex-direction: row;
@@ -1015,7 +1011,7 @@
     padding-left: 5%;
     font-size: 1em;
     font-weight: 600;
-    display: none;
+    display: none; /*display hidden until media query makes it visible*/
   }
 
   .order-arrow{
@@ -1029,7 +1025,7 @@
   display: flex;
   width: 35vw;
  }
-
+/*order items styling*/
  .order-items{
   background-color: #ffffff;
   padding: 2%;
@@ -1040,7 +1036,7 @@
   height: 7vw;
   border: solid 1px #d9d9d9;
  }
-
+/*info about the order items*/
  .order-content{
   display: flex;
   flex-direction: column;
@@ -1062,6 +1058,7 @@
   text-align: right;
  }
 
+ /*button specific styling*/
   .continue{
   background-color: #F87E60;
   color: #ffffff;
