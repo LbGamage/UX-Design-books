@@ -2265,6 +2265,17 @@ align-items: center;
 justify-content: center;
 color: rgba(0, 0, 0, 0.6)
 }
+
+
+
+/*confirmation*/
+
+.main-checkout-confirmation{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'IBM Plex Sans Thai', sans-serif;  
+  align-items: flex-end;
+}
   /*SAM END*/
 
   /*lihini start*/
