@@ -41,7 +41,7 @@ function searchBar() {
 
   //links to the homepage
   document.getElementById("linkHome").onclick = function () {
-    location.href = "Homepage.html";
+    location.href = "index.html";
 }
 
 //openCart shows the pop-cart when clicked and also covers the backgroud with a 
