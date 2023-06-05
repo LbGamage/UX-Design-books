@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script defer src="payment-form.js"></script>
+</head>
+<body>
+    <div class="header-bar">
+        <a href="Homepage.html" class="home-link">
+            <div class="logo-content" i> <!--a is a bit flaky so try to link it via js-->
+                <img src="A3/Logo.png" alt="Logo" class="logo">
+                <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
+            </div>
+        </a>
+    </div>    
+    
+    <div class="main-checkout">
+        <div class="order-dropdown" onclick="orderSummary()">
+            <p>Order Summary</p>
+            <img src="A3/down-arrow.png" alt="down-arrow" class=order-arrow>
+        </div>
+        <div class="column-form c-items" id="orderSummary">
+            <div class="order-container">
+                <div class="order-items">
+                <div class="row-item">
+                    <img src="A3/wicked-king.jpg" alt="" class="bookorder-img">
+                    <div class="order-content">
+                        <span class="order-name"> The Wicked King (Folk of Air Series #2)</span>
+                        <span class="order-author">Holly Black</span>
+                        <span class="order-price"><b>$11.69</b></span>
+                    </div>
+                </div>
+                </div>
+                <div class="order-items">
+                <div class="row-item">
+                    <img src="A3/wicked-king.jpg" alt="" class="bookorder-img">
+                    <div class="order-content">
+                        <span class="order-name"> The Wicked King (Folk of Air Series #2)</span>
+                        <span class="order-author">Holly Black</span>
+                        <span class="order-price"><b>$11.69</b></span>
+                    </div>
+                </div>
+                </div>
+            <div class="row-item subtot">
+                <p class="sub-total">Sub Total</p>
+                <p class="sub-pricing"><b>$11.69</b></p>
+            </div>
+            <div class="row-item ship">
+                <p> Shipping</p>
+                <p class="shipping-price"><b>Calculated at next step</b></p>
+            </div>
+            <div class="total-tax">
+            <div class="row-item tot">
+               <p class="total"><b>Total</b></p>
+               <p class="total-price"><b>$11.69</b></p>
+            </div>
+            <div class="row-item taxes">
+                <p class="tax">Including tax (GST 10%)</p>
+            </div>
+            </div>
+            
+                <p class="gift-card"> <b>Gift Card or Discount Coupon</b></p>
+            <div class="row-item coupon">
+                <input type="text" placeholder="Gift Card or Discount Coupon" class="coupon-input">
+                <button class="coupon-button"><img src="A3/right-arrow.png" alt="right-arrow" class="coupon-arrow"></button> <!--Arrow img-->
+            </div>
+            <div class="row-item return">
+                <img src="A3/right-arrow.png" alt="right-arrow" class="return-arrow"> <!--arrow-->
+                <p class="return-text">Return to Cart</p>
+            </div>
+            <hr class="foot-divider">
+            <div class="row-item order-footer">
+                
+                <ul class="nav-order">
+                    <li class="order-nav-con"><u>Refund Policy</u></li>
+                    <li class="order-nav-con"><u>Shipping Policy</u></li>
+                    <li class="order-nav-con"><u>Term of Service</u></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+
+            <!--Shipping form-->
+        <div class="column-form form1">
+        
+            <div class="payment-content">
+                <div class="navigation">
+                    <p class="past">Cart</p>
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="nav-arrow">                     
+                    <p class="past"> <b>Information</b></p>
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="nav-arrow">                     
+                    <p class="past"> Shipping</p>
+                    <img src="A3/right-arrow.png" alt="right-arrow" class="nav-arrow">                     
+                    <p class="nav-location"> Payment</p>
+                </div>
+
+                <form id="form2">
+                    <div class="form-body">
+                        <div class="main-form">
+                            <div class="past-info">
+                                <div class="contact">
+                                    <span class="pastinfo-title">Contact</span>                                
+                                    <button class="change">change</button>
+                                </div> 
+                                <span class="contact-details">name@gmail.com</span>   
+                                <hr class="form-div">
+                                <div class="contact">
+                                    <span class="pastinfo-title">Ship To</span>
+                                    <button class="change">change</button>
+                                </div> 
+                                <span class="contact-details">University of Melbourne, Parkvile...</span>
+
+                
+                </form>
+                
+            </div>   
+            <hr style="width:45vw";>
+        </div>
+ 
+</div>
+
+<h1 style="margin-left:5%">Shipping Method</h1>
+
+<div class="form-body form3">
+    <div class="main-form">
+        <div class="past-info">
+            <div class="payment-title" style="padding: 0; margin: 0;">
+                <input type="radio" class="payment-type" name="radio2">
+                <label for="radio" class="payment-label">Click and Collect <br>
+                    <p style="font-size: 0.8em; color: #6f6f6f;">available for pickup in 1-3 days</p>
+                </label>
+            </div>
+            <hr class="form-div">
+            <div class="payment-title">
+                <input type="radio" class="payment-type" name="radio2">
+                <label for="radio" class="payment-label">Standard Delivery<br>
+                    <p style="font-size: 0.8em; color: #6f6f6f;">1-7 days</p>
+                </label>
+            </div>
+            <hr class="form-div">
+            <div class="payment-title">
+                <input type="radio" class="payment-type" name="radio2">
+                <label for="radio" class="payment-label">Express Shipping <br>
+                    <p style="font-size: 0.8em; color: #6f6f6f;">1-3 days</p>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="input-row continue-button">
+    <button type="submit" class="continue" id="ship-button"> Proceed to payment</button>
+</div>
+        
+
+</body>
+</html>
