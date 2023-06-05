@@ -2301,8 +2301,12 @@ color: rgba(0, 0, 0, 0.6)
   .confirmation-columns{
     flex-direction: column;
   }
-  .recom{
-    
+  .summary-column{
+    display: none;
+    width: 0;
+  }
+  .confirmation-column{
+    width: 100%;
   }
 }
 /*SAM END*/
