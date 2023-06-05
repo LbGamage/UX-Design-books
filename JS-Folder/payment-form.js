@@ -14,7 +14,7 @@ paymentForm.addEventListener('submit', e => {
   
     if (validatePayment()) {
         //submit once all inputs are true
-        paymentForm.submit();
+        window.location.href="confirmation.html"
     }})
   
   
