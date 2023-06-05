@@ -1868,9 +1868,21 @@ color: rgba(0, 0, 0, 0.6)
 }
 
 .merch{
+  display: flex;
   justify-content: center;
-  margin-left: 15%;
-  max-width: 50vw;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.merch img{
+  max-width: 100%;
+  height: auto;
+}
+
+.cafeBanner{
+  margin-top: 7%;
 }
 /*SAM END*/
 
