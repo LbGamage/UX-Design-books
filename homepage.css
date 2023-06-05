@@ -148,21 +148,6 @@
     object-position: center;
   }
 
-  .genre-left, .genre-right{
-    background: none;
-    border: none;
-  }
-  
-  button:hover{
-    cursor: pointer;
-  }
-
-  .figure{
-    display: flex;
-    margin-inline-start: 2%;
-    margin-inline-end: 2%;
-  }
-
   .grid-product-image{
     width: 50%;
   }
@@ -178,6 +163,23 @@
     font-size: 1em;
     padding-bottom: 10%;
   }
+
+  .genre-left, .genre-right{
+    background: none;
+    border: none;
+  }
+  
+  button:hover{
+    cursor: pointer;
+  }
+
+  .figure{
+    display: flex;
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+  }
+
+
   
   .view-all{
     display:grid;
@@ -2296,6 +2298,7 @@ color: rgba(0, 0, 0, 0.6)
 .merch{
   justify-content: center;
   margin-left: 15%;
+  max-width: 50vw;
 }
 
 @media (max-width: 768px) {
