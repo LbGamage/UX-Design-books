@@ -2276,7 +2276,36 @@ color: rgba(0, 0, 0, 0.6)
   font-family: 'IBM Plex Sans Thai', sans-serif;  
   align-items: flex-end;
 }
-  /*SAM END*/
+ 
+.confirmation-columns{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.confirmation-column{
+  width: 50%;
+}
+
+.summary-column{
+  width: 50%;
+
+}
+
+.merch{
+  justify-content: center;
+  margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+  .confirmation-columns{
+    flex-direction: column;
+  }
+  .recom{
+    
+  }
+}
+/*SAM END*/
 
   /*lihini start*/
   /*multi-product header*/

@@ -16,11 +16,12 @@
                 <p class="bookshop" id="bookshop-home">Robinson's Bookshop</p>
             </div>
         </a>
-    </div>    
-    
+    </div>  
+    <div class="confirmation-columns">  
+    <div class="confirmation-column" style="text-align: center; justify-content: center;">
     <h1>Order Confirmation</h1>
     <br>
-    <h3>Oder Number: #1234567</h3>
+    <h3>Order Number: #1234567</h3>
 
     <svg width="245" height="245" viewBox="0 0 245 245" fill="none" xmlns="http://www.w3.org/2000/svg" style="float: center;">
         <path d="M122.5 20.4167C66.3543 20.4167 20.4167 66.3543 20.4167 122.5C20.4167 178.646 66.3543 224.583 122.5 224.583C178.646 224.583 224.583 178.646 224.583 122.5C224.583 66.3543 178.646 20.4167 122.5 20.4167ZM122.5 204.167C77.4813 204.167 40.8334 167.519 40.8334 122.5C40.8334 77.4813 77.4813 40.8334 122.5 40.8334C167.519 40.8334 204.167 77.4813 204.167 122.5C204.167 167.519 167.519 204.167 122.5 204.167ZM169.356 77.3792L102.083 144.652L75.6438 118.315L61.2501 132.708L102.083 173.542L142.917 132.708L183.75 91.8751L169.356 77.3792Z" fill="#1B605D"/>
@@ -28,13 +29,14 @@
     <h1 style="text-align: center;">Thank you for your purchase</h1>   
     <br>
     <p style="text-align: center;">Email recept has been sent</p>     
-
+</div>
+<div class="summary-column">
     <div class="main-checkout-confirmation">
         <div class="order-dropdown" onclick="orderSummary()">
             <p>Order Summary</p>
             <img src="A3/down-arrow.png" alt="down-arrow" class=order-arrow>
         </div>
-        <div class="column-form c-items" id="orderSummary">
+        <div class="column-form c-items" id="orderSummary" style="background-color: transparent; border: 0;">
             <div class="order-container">
                 <div class="order-items">
                 <div class="row-item">
@@ -62,18 +64,23 @@
             </div>
             <div class="row-item ship">
                 <p> Shipping</p>
-                <p class="shipping-price"><b>$7 AUD</b></p>
+                <p class="shipping-price"><b>FREE</b></p>
             </div>
             <div class="total-tax">
             <div class="row-item tot">
                <p class="total"><b>Total</b></p>
-               <p class="total-price"><b>$30.38</b></p>
+               <p class="total-price"><b>$23.38</b></p>
             </div>
             <div class="row-item taxes">
                 <p class="tax">Including tax (GST 10%)</p>
             </div>
             </div>
 
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
             <!--Recommended books adn footer-->
