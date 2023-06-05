@@ -57,8 +57,12 @@ function openCart() {
 function addedCart(){
   const addedToCart = document.getElementById('addCart');
   const notif = document.getElementById('cartNotif');
+  const cartItem =document.getElementById('popCart');
+  const emptyCart = document.getElementById('emptyCart');
 
     notif.style.display = "block";
+    cartItem.style.display = "block";
+    emptyCart.style.display="none";
   
   addedToCart.innerText = "Added to Cart";
   addedToCart.style.backgroundColor="#F9C290"

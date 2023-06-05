@@ -9,6 +9,7 @@
     <script defer src="JS-Folder/info-form.js"></script>
 </head>
 <body>
+    <!--edited header withoung the search, cart and menu functions for the forms-->
     <div class="header-bar">
         <a href="Homepage.html" class="home-link">
             <div class="logo-content"> 
@@ -18,13 +19,17 @@
          </a>
     </div>    
     
+    <!--main checkout split into two columns-->
     <div class="main-checkout">
+        <!--order header-->
         <div class="order-dropdown" onclick="orderSummary()">
             <p>Order Summary</p>
+            <!--when screen size is small arrow will appear-->
             <img src="A3/down-arrow.png" alt="down-arrow" class=order-arrow>
         </div>
         <div class="column-form c-items" id="orderSummary">
             <div class="order-container">
+                <!--div contains information about the item-->
                 <div class="order-items">
                 <div class="row-item">
                     <img src="A3/wicked-king.jpg" alt="" class="bookorder-img">
@@ -63,6 +68,7 @@
             </div>
             </div>
             
+            <!--gift card-->
                 <p class="gift-card"> <b>Gift Card or Discount Coupon</b></p>
             <div class="row-item coupon">
                 <input type="text" placeholder="Gift Card or Discount Coupon" class="coupon-input">
@@ -73,6 +79,8 @@
                 <p class="return-text">Return to Cart</p>
             </div>
             <hr class="foot-divider">
+
+            <!--order summary footer-->
             <div class="row-item order-footer">
                 
                 <ul class="nav-order">
@@ -84,10 +92,12 @@
             </div>
             </div>
 
+            <!--information form and other functions such as login and sign up-->
     <div class="column-form form1">
         <div class="payment-content">
+            <!--top navigation that shows the flow of the forms, links are functional-->
             <div class="navigation">
-                <p class="past">Cart</p>
+                <p class="past"><a href="Cart.html"> Cart</a></p>
                 <img src="A3/right-arrow.png" alt="right-arrow" class="nav-arrow">                     
                 <p class="nav-location"> <b>Information</b></p>
                 <img src="A3/right-arrow.png" alt="right-arrow" class="nav-arrow">                     
@@ -95,6 +105,7 @@
                 <img src="A3/right-arrow.png" alt="right-arrow" class="nav-arrow">                     
                 <p class="future"> Payment</p>
             </div>
+            <!--login, join or continue as guest-->
             <div class="join">
                 <button class="login">Login</button>
                 <p class="future">Not a member?</p>
@@ -111,15 +122,18 @@
                <span class="strikethrough">OR</span>
             </div>
 
+            <!--form start-->
             <div class="form-heading">
                 <h3 class="shipping-address"> Shipping Address</h3> 
                 <br>
             </div>
             
+            <!--form body, uses flex properties to be organzied-->
             <div class="form-body">
                 <form action=""  class="main-form" id="main-form" onsubmit="return validateForm()">
                     <div class="input-row">
                         <div class="form-inputbox"> 
+                             <!--error messages which appear after verification-->
                             <small>Error message</small>
                             <div class="formname-bg">  
                             <label class="form-names">First Name</label>
@@ -135,7 +149,6 @@
                         </div>          
 
                     </div>
-
                     <div class="input-row email-column">
                         <div class="form-inputbox">
                             <small>Error message</small>
@@ -165,7 +178,7 @@
                             <input type="text" placeholder="Apartment, Suite, etc. (optional)" class="address2">
                         </div>
                     </div>
-
+                    <!--container three different inputs in one row-->
                     <div class="input-row add-details">
                         <div class="form-inputbox">
                             <small>Error message</small>
@@ -186,6 +199,7 @@
                             <div class="formname-bg">
                             <label class="form-names">State/Territory</label>
                             </div>
+                            <!--drop down input-->
                             <select id="state" name="state" class="dropdown">
                                 <option value="--"> </option>
                                 <option value="VIC">VIC</option>
@@ -204,9 +218,11 @@
                     <div class="input-row add-details">
                         <div class="form-inputbox">
                             <small>Error message</small>
-                            <input type="tel" placeholder="Phone Number (optional)" class="phonenumber" id="phone-number">
+                            <input type="tel" placeholder="Phone Number (optional)" class="phonenumber" id="phone-number" maxlength="10">
                         </div>
                     </div>
+
+                    <!--submision button-->
                     <div class="input-row continue-button">
                         <button type="submit" class="continue ">Continue to Shipping</button>
                     </div>
@@ -216,12 +232,7 @@
             </div>
         </div>
     </div>
-
-    
-        
     </div>
 </div>
-
-
 </body>
 </html>

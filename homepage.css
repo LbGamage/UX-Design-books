@@ -686,6 +686,7 @@
     padding-left: 4%;
     display: flex;
     flex-direction: row;
+    display: none;
     }
     
     .bg{
