@@ -2349,63 +2349,6 @@ color: rgba(0, 0, 0, 0.6)
     flex-direction: row;
   }
 
-/*Shipping details*/
-
-.form-body{
-  text-align: left;
-}
-
-.previous-info {
-  text-align: left;
-  justify-content: left;
-  border: 1px solid #6F6F6F;
-  border-radius: 2px; 
-  padding: 2em;
-  margin-left: 5%;
-}
-
-.fixed-detail-2 {
-  margin: 5%; 
-  border-top: 1px solid #6F6F6F;
-  border-radius: 2px; 
-  padding-top: 7%;
-}
-
-.dot-2{
-  height: 13px;
-  width: 13px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  border: 5px solid #1B605D;
-  margin: 5%;
-}
-
-.dot{
-  height: 20px;
-  width: 20px;
-  background-color: #fffdfd;
-  border-radius: 50%;
-  display: inline-block;
-  border: 1.5px solid #bebebe;
-  margin: 5%;
-}
-
-.shipping-details{
-  border: 1px solid #6F6F6F;
-  margin: 5%;
-}
-
-.column-form-1{
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 5%;
-  margin:5%;
-  display: flex;
-  flex-direction: column;
-}
-
 /*homepage*/
   @media only screen and (max-width : 900px) {
     .dates{
