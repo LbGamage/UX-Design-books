@@ -181,12 +181,12 @@
               <p class="popup-shipping">
                   Add <b> $63.41 </b> of items to be eligible for <b> free shipping </b>                         </p>
           </div>
+          <!--empty cart will be shown until item is added into cart-->
           <div class="empty-cart" id="emptyCart"> 
-            <!--when first entering the website the cart will show this message-->
                   <p class="search-title">Your cart is Empty</p>
           </div> 
           <div class="book-search  popcart-item" id="popCart"> 
-            <!--after adding item cart shows the following-->
+            <!--after adding item cart shows the following and hides the empty cart text-->
             <a href="single-product-page.html" class="single-link">  
                 <div class="search-img">
                     <img src="A3/wicked-king.jpg" alt="wicked-king" class="searchimg pop-img">
@@ -202,7 +202,7 @@
                 </div>
             </a>
             </div>    
-            
+            <!--cart information-->
             <div class="cart-bottom">
                 <hr class="searchdiv-bottom">
                 <div class="subtotal">
@@ -210,28 +210,29 @@
                     <p class="sub-pricing"><b>$11.69</b></p>
                 </div>
               <span class="ship-info">*Shipping and taxes calculated at checkout</span>
-              
+              <!--links to cart webpage-->
               <button class="view-cart"> <a href="Cart.html">View Cart</a></button>
             </div>
         
           </div>
         </div>
         <div class="bg" id="bg"></div>
-
+        <!--free shipping banner-->
     <div class="free-shipping">
         <p class="content-free"  >
             <img src="A3/carbon_delivery-truck.png" alt="carbon_delivery-truck" class="free-truck">
             Free Shipping over $75
         </p>
     </div>
-        
+        <!--nabigation bar-->
         <div class="navigation">
-            <p class="nav-past">Home</p>
+            <p class="nav-past"><a href="Homepage.html">Home</a></p>
             <img src="A3/right-arrow-grey.png" alt="right-arrow-grey" class="nav-arrow">                  
             <p class="nav-location">Books</p>
         </div>
-
+    <!--main product container is split into to columns to make it easier to organzie-->
     <div class="main-product-container">
+        <!--left side column, consits of book image and title and wishlist-->
         <div class="column main-product-view">
             <h1>The Wicked King (Folk <br/> of Air series #2)</h1>
             <p class="product-author">Holly Black</p>
@@ -243,13 +244,13 @@
             </div>
         </div>
         
-        <div class="column product-info">
+        <div class="column product-info"> <!--Right side column contains information of the product-->
             <p class="product-type">Paperback</p>
             <div class="price-offer">
                 <p class="product-price"> $11.69</p>
                 <p class="dicsount-price"> <s>$12.99</s> | Save 10%</p>
             </div>
-            
+            <!--delivery information-->
             <div class="delivery">
                 <div class="delivery-text">
                 <img src="A3/truck-black.png" alt="truck-black" class="truck"> <!--might be pixelated if so swicth for new image-->
@@ -261,15 +262,16 @@
                     <img src="A3/search-icon.png" alt="search-icon" class="postcode-search-img">
                 </div>
             </div>
+            <!--add to cart button-->
                 <div class="button-location">
             <button class="add-to-cart" id="addCart" onclick="addedCart()"> Add to Cart </button>
         </div>
-
+            <!--drop down information tabs about the product-->
             <div class="product-details">
                 <div class="detail"  onclick="descripDrop()">
                 <p class="descrip-title">Description</p>
-                <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow" onclick="roateArrow()"> <!--add css to create arrows or replace with images--> 
-                <!--Add description drop down functionality-->                  
+                <img src="A3/down-arrow.png" alt="down-arrow" class="descrip-arrow" onclick="roateArrow()"> <!--arrow roates when clicked--> 
+                <!-- description drop down functionality-->                  
                 </div>
                 <hr class="divider">
                 <div class="descrip-drop" id="descripText">
@@ -305,6 +307,7 @@
         </div>
     </div>
     <br>
+        <!--copies of the book display section form the home page, modifided to show the series of the product-->
         <div class="book-reccom">
         <div class="series">
             <div class="rec-header">
@@ -334,11 +337,11 @@
                 </div>
             </section>    
         </div>
-
+         <!--copies of the book display section form the home page-->
         <div class="recom">
             <div class="rec-header">
                 <h2 class="book-recs">More Like This</h2>
-                <h3 class="view-all" href=""> <u>View All</u></h3> <!--Like to product page if made-->
+                <h3 class="view-all" href="multiProduct.html"> <u>View All</u></h3> <!--Link to product page if made-->
             </div>
            
             <section class="product-grid recom-grid">
@@ -394,6 +397,8 @@
             </section>
         </div>
     </div>
+
+    <!--footer column-->
     <div class="footer">  
         <div class="footer-row" >
             <div class="footer-column">
@@ -436,12 +441,8 @@
                     <p class="footer-text">Sign Up for New and Savings</p>
                     <input class="footer-button" placeholder="Email Address">
                 </div>        
-
-            </div>
-                
-            </div>
+            </div> 
         </div>
-
-    
+    </div>
 </body>
 </html>
